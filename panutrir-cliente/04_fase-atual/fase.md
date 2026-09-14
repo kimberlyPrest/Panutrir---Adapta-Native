@@ -1,0 +1,56 @@
+# Fase 1 — Base confiável e primeira simulação
+
+**Estado:** APROVADA — pronta para decomposição e execução por tasks  
+**Objetivo:** Transformar arquivos em uma base governada e demonstrar um ciclo de metas sintético, com qualidade, snapshot, catálogo, baseline inicial e rastreabilidade.
+
+## Requisitos de origem
+
+RF-01, RF-02, RF-03, RF-04, RF-05, RF-06, RF-07, RF-08, RF-09
+
+## Entrega demonstrável
+
+Um operador importa fixtures sintéticas, trata pendências e abre um painel com uma primeira simulação rastreável por linha, responsável e região.
+
+## Critérios de aceite
+
+- [ ] **CA-1-01**: matriz papel×operação aprovada controla criar/configurar ciclo, importar, homologar, editar catálogo, fechar snapshot e exportar; negações são auditadas. O login herda política documentada de sessão, recuperação e proteção contra tentativas do provedor nativo.
+- [ ] **CA-1-02**: quatro tipos de CSV válidos são importados atomicamente em staging, com SHA-256 verificado, schema, execução e contagens; reenvio idêntico é idempotente; tamanho, conteúdo real, encoding, delimitador e nome do arquivo são validados.
+- [ ] **CA-1-03**: duplicidade crítica, chave órfã, tipo inválido, valor negativo proibido, divisão inválida e fórmula CSV perigosa vão para quarentena; qualquer falha mantém o staging no estado anterior, sem carga parcial.
+- [ ] **CA-1-04**: catálogo canônico temporal resolve produtos, responsáveis e territórios por vigência na data da venda; ambiguidades ou ausência de período viram pendência sem adivinhação.
+- [ ] **CA-1-05**: snapshot é imutável, exportável em formato aberto e reproduzível, congelando hashes dos arquivos, versão do catálogo, parâmetros, schema e versão do simulador; rollback restaura o estado anterior e preserva auditoria.
+- [ ] **CA-1-06**: painel mostra cobertura temporal, completude, erros, pendências, status de homologação e baseline provisório do tempo atual de preparação/publicação, separado do baseline oficial.
+- [ ] **CA-1-07**: com fixture sintética, o sistema apresenta uma primeira simulação por linha, responsável e região, com memória de cálculo.
+- [ ] **CA-1-08**: o sistema rotula claramente dados sintéticos, baseline provisório e bloqueio da carga real por G1/G2.
+- [ ] **CA-1-09**: exportação do diagnóstico é restrita por papel, auditada e sanitiza células iniciadas por =, +, -, @, tab ou CR; não contém segredo ou PII não mascarada.
+
+## Dependências
+
+- Gates aplicáveis do escopo; Fase 1 usa apenas fixtures sintéticas; dados reais ficam para revalidação posterior.
+- Critérios e evidências da fase anterior aceitos antes da abertura.
+
+## Fora desta fase
+
+motor produtivo, workflow de aprovação, integrações diretas, campanhas e IA; todos pertencem às fases seguintes.
+
+## Tasks
+
+| ID | Leva | Task | Dono | SPEC | Critério | Recorte da prova | Evidência esperada | Pré-condições | Status |
+|---|---|---|---|---|---|---|---|---|---|
+| T1.1 | A | Versionar perfis e matriz papel×operação em migrations Supabase | Engenharia | SPEC-1-001 | Schema de perfis e políticas RLS cobre as seis operações sensíveis sem permissão implícita. | SPEC-1-001/RED — matriz inexistente ou operação sem política explícita. | Migration SQL + teste de políticas por papel + diff do schema. | Projeto Supabase de desenvolvimento disponível; fixtures de usuários sintéticos. | ☐ |
+| T2.1 | A | Criar contratos e fixtures sintéticas dos quatro CSVs | Dados | SPEC-1-002 | Quatro contratos definem colunas, tipos, limites, encoding, delimitador e casos válidos/inválidos sem usar CSV real. | SPEC-1-002/RED — fixture sem contrato ou arquivo malicioso aceito. | Fixtures versionadas + catálogo de schemas + relatório de casos. | Nenhum CSV real acessado; campos derivados apenas do escopo aprovado. | ☐ |
+| T4.1 | A | Criar modelo temporal do catálogo canônico | Dados | SPEC-1-004 | Tabelas e restrições representam entidade canônica e vigência sem sobreposição silenciosa. | SPEC-1-004/RED — homônimo ou vigência sobreposta é associado automaticamente. | Migration SQL + testes de constraints temporais + diagrama do modelo. | Supabase de desenvolvimento; a própria task cria as entidades sintéticas mínimas descritas na SPEC. | ☐ |
+| T1.2 | B | Implementar criação do ciclo-piloto protegida por RLS | Engenharia | SPEC-1-001 | Operador autorizado cria ciclo em preparação; perfis não autorizados recebem negação auditada. | SPEC-1-001/GREEN — criar ciclo e negar a mesma ação ao papel consulta. | Teste de integração Auth/RLS + registros de auditoria correlacionados. | T1.1 concluída; contas sintéticas por papel. | ☐ |
+| T2.2 | B | Implementar upload seguro e staging atômico idempotente | Engenharia de dados | SPEC-1-002 | Upload calcula/verifica SHA-256, valida conteúdo e grava staging em transação; reenvio não duplica linhas. | SPEC-1-002/GREEN — quatro CSVs entram; reenvio preserva contagens. | Testes de integração + hashes + contagem antes/depois + log da execução. | T2.1 concluída; bucket Supabase Storage de teste; migrations versionadas. | ☐ |
+| T4.2 | B | Implementar resolução de chaves por código forte e vigência | Engenharia de dados | SPEC-1-004 | Equivalências válidas resolvem por data da venda; ambiguidade/lacuna vira pendência. | SPEC-1-004/GREEN — resolver equivalentes e manter homônimo pendente. | Testes por período + registros de pendência + trilha antes/depois. | T4.1 concluída; fixture sintética temporal. | ☐ |
+| T1.3 | C | Provar negações, sessão e recuperação de acesso | QA de segurança | SPEC-1-001 | Matriz nega todas as operações proibidas; sessão expira e recuperação não amplia privilégios. | SPEC-1-001/REGRESSAO — negações, tentativas, expiração e recuperação. | Relatório papel×operação + logs de negação + capturas sem enumeração de conta. | T1.2 concluída; política nativa do Supabase documentada. | ☐ |
+| T2.3 | C | Provar limites, idempotência e rollback da importação | QA de dados | SPEC-1-002 | Extensão falsa, path traversal, excesso, encoding inválido e interrupção deixam staging no hash anterior. | SPEC-1-002/REGRESSAO — entradas hostis e falha transacional. | Relatório CA-1-02 + diff/hash do staging + log de rollback. | T2.2 concluída; snapshots antes/depois disponíveis. | ☐ |
+| T3.1 | C | Implementar classificação de qualidade e quarentena | Engenharia de dados | SPEC-1-003 | Duplicidade, órfã, tipo inválido, negativo proibido, divisão inválida e fórmula perigosa são classificados e quarantinados. | SPEC-1-003/GREEN — todos os classificadores geram código e motivo. | Teste parametrizado dos classificadores + contagem da quarentena. | T2.2 concluída; fixtures inválidas da SPEC disponíveis. | ☐ |
+| T4.3 | C | Provar versionamento e reversão do catálogo temporal | QA de dados | SPEC-1-004 | Alteração autorizada registra autor/motivo/antes/depois e reversão restaura vínculos sem apagar história. | SPEC-1-004/REGRESSAO — alterar catálogo, medir impacto e reverter. | Diff de vínculos + versões + auditoria preservada. | T4.2 concluída; duas versões sintéticas do catálogo. | ☐ |
+| T3.2 | D | Implementar liberação controlada e exportação segura do diagnóstico | Engenharia de segurança | SPEC-1-003 | Liberação crítica exige papel, motivo e revisor distinto; export sanitiza fórmulas, PII e segredos. | SPEC-1-003/GREEN — export seguro; negação para mesmo importador e papel proibido. | Testes de segregação + CSV aberto como texto + log de exportação. | T3.1 concluída; matriz de papéis de T1.1 aplicada. | ☐ |
+| T5.1 | D | Criar manifesto de snapshot imutável no Supabase | Engenharia de dados | SPEC-1-005 | Snapshot congela hashes, schema, catálogo, parâmetros e versão do simulador; edição direta é negada. | SPEC-1-005/RED→GREEN — snapshot editável antes; imutável depois. | Migration/políticas + manifesto JSON + teste negativo de update/delete. | T2.2 e T4.2 concluídas; insumos sintéticos homologados para teste. | ☐ |
+| T3.3 | E | Provar atomicidade, sanitização e auditoria append-only | QA de segurança | SPEC-1-003 | Falha mantém staging anterior; seis prefixos CSV são neutralizados; operador e admin funcional não alteram logs. | SPEC-1-003/REGRESSAO — rollback, export hostil e tentativa de mutar auditoria. | Hash antes/depois + export sanitizado + testes negativos de log. | T3.2 concluída; papéis e políticas RLS aplicados. | ☐ |
+| T5.2 | E | Implementar reprodução e verificação de integridade do snapshot | Engenharia de dados | SPEC-1-005 | Mesmos insumos reproduzem resultado; adulteração ou troca de catálogo/motor é detectada por SHA-256. | SPEC-1-005/GREEN — reproduzir; REGRESSAO — adulterar e detectar. | Relatório de reprodução + hashes + divergência controlada. | T5.1 concluída; simulador determinístico mínimo versionado. | ☐ |
+| T6.1 | E | Implementar consultas do painel de qualidade e baseline provisório | Engenharia de dados | SPEC-1-006 | Consultas retornam cobertura, completude, erros, quarentena, homologação e tempo provisório sem tratar como baseline oficial. | SPEC-1-006/RED→GREEN — métricas ausentes antes; completas depois. | Testes das queries + dataset esperado/obtido + política RLS. | T2.2, T3.1 e T4.2 concluídas; snapshot sintético disponível. | ☐ |
+| T5.3 | F | Implementar exportação aberta e reversão de snapshot | Engenharia | SPEC-1-005 | Papel autorizado exporta manifesto/dados sem fórmula, PII ou segredo; reversão cria nova versão e preserva auditoria. | SPEC-1-005/REGRESSAO — export hostil, acesso proibido e restauração. | Arquivo exportado + validação de sanitização + histórico de versões. | T5.2 concluída; políticas de exportação aprovadas. | ☐ |
+| T6.2 | F | Construir primeira simulação rastreável por linha, responsável e região | Engenharia de produto | SPEC-1-006 | Fixture sintética gera resultados determinísticos com memória de cálculo navegável nos três recortes. | SPEC-1-006/GREEN — simulação e memória fecham com valores esperados. | Teste de cálculo + capturas do painel + trilha fonte→resultado. | T6.1 e T5.2 concluídas; fórmula sintética explicitada e versionada. | ☐ |
+| T6.3 | G | Provar rótulo sintético, bloqueios e demonstração do painel da Fase 1 | QA de produto | SPEC-1-006 | Tela, captura e export mantêm rótulo não oficial; snapshot não homologado e recorte proibido são negados; CAs CA-1-06, CA-1-07 e CA-1-08 são demonstrados. | SPEC-1-006/REGRESSAO — rótulo, bloqueios e demonstração do painel. | Roteiro do painel + matriz CA-1-06/07/08→evidência + logs/capturas finais. | T6.1 e T6.2 concluídas; evidências das SPECs predecessoras permanecem referenciadas, sem revalidação nesta task. | ☐ |
