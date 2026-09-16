@@ -6,3 +6,6 @@
 - Seis SPECs e dezoito tasks da Fase 1 geradas e revisadas.
 - CSVs reais excluídos da Fase 1; fixtures sintéticas obrigatórias.
 - Exportação canônica preparada para o Google Drive.
+
+## 2026-09-16
+- [Ângelo] · DEBUG task T1.1: teste humano bloqueado pela ausência de tela → tela autenticada `/permission-test` criada; causa raiz do papel sintético incorreto corrigida com associação explícita a `gestor_dados` → corrigido no Skip v0.0.8.
