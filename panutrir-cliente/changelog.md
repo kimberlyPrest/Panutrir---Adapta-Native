@@ -14,3 +14,7 @@
 
 ## 2026-09-23
 - [Kim] · **EMENDA 01/2026 — Metodologia oficial de cálculo da meta** incorporada aos documentos (memória de cálculo do cliente, modelo fechado em ago/2026, 10 blocos). Efeitos: T2.1b criada na SPEC-1-002 (revisão de contratos CSV contra os campos exigidos pela metodologia); T6.2 e CA-1-07a na SPEC-1-006 (simulação passa a reproduzir a fórmula oficial com parâmetros versionados); RF-10 e RN-19 atualizados no PRD; nota da emenda no fase.md. Documento-fonte em `06_notas/2026-09-23-emenda-01-metodologia-meta.md`.
+
+## 2026-10-01
+- [Ângelo] · Task T4.1 concluída: modelo temporal do catálogo canônico versionado em migration (6 tabelas com RLS — produtos, clientes, responsáveis, territórios, vínculos e pendências de resolução; 5 constraints EXCLUDE anti-sobreposição; vigência vale pela data da venda; homônimo/lacuna viram pendência, nunca resolução silenciosa); 6/6 provas em transação revertida; btree_gist no schema extensions; QA do Skip v0.0.12 passou; diagrama em `docs/diagrama-catalogo-temporal.md` e fixtures temporais em `fixtures/temporal/seed_sintetico.sql` (uso na T4.2). Banco Supabase restaurado após pausa do plano gratuito e revalidado (12 tabelas, matriz 6×7, auditoria preservada). Semântica aprovada pelo champion.
+- [Ângelo] · Incidente operacional: pausa automática do Supabase (plano gratuito) derrubou o banco por inatividade; restauração concluída reaplicando as 7 migrations versionadas do Skip — nenhuma perda de schema; runbook pós-pausa registrado no aprendizado contínuo.
