@@ -1,13 +1,13 @@
 # Estado atual — Adapta Cliente
 
-- task_id: T2.1b
-- champion: Ângelo
-- spec: panutrir-cliente/04_fase-atual/specs/SPEC-1-002.md (EMENDA 01/2026)
-- etapa: concluida
-- autorizacao_implementacao: confirmada — 2026-10-02T09:36:00-03:00 — "Autorizar implementação da T2.1b"
-- teste_humano: aprovado — 2026-10-02T09:41:00-03:00 — "Testei e funcionou — pode concluir"
-- verificacao_automatica: passou — Skip v0.0.13/eb81706 (setup, análise estática, build, integrações e testes sem erros); revalidação independente do zero confirmou catálogo v1.1.0 com rastreabilidade dos 8 blocos e fixture de parâmetros com origem SINTETICO
-- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-10-02-0945-mapeamento-blocos-contratos.md
-- ultima_acao: T2.1b concluída — fase.md, STATUS.md, changelog.md, aprendizado e controle atualizados
-- proxima_acao: aguardar novo pedido do champion; próxima elegível é T6.2 (leva F desbloqueada)
-- atualizado_em: 2026-10-02T09:45:00-03:00
+- task_id: T6.2
+- champion: Ângelo (champion operacional; responsável individual de implementação a confirmar)
+- spec: panutrir-cliente/04_fase-atual/specs/SPEC-1-006.md
+- etapa: bloqueada
+- autorizacao_implementacao: ausente
+- teste_humano: pendente
+- verificacao_automatica: pendente
+- aprendizado: pendente
+- ultima_acao: pedido de próxima task analisado; T6.2 identificada como candidata, mas bloqueada por divergência entre SPEC, fase e matriz de dependências; lacunas dos blocos 9–10 e da regra de origem de parâmetros registradas como DÚVIDA; nenhuma alteração de produto feita nesta análise
+- proxima_acao: aguardar esclarecimento da consultora Kim sobre sequência, metodologia completa, regra dos parâmetros e atribuição da T6.2
+- atualizado_em: 2026-10-02T09:50:00-03:00
