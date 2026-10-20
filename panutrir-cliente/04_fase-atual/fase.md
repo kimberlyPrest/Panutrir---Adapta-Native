@@ -47,7 +47,7 @@ A ordem, as dependências e o status estão em `matriz-specs-fases.md` (fonte ú
 
 ## Perguntas ao cliente desta fase
 
-Q-01..Q-25 e Q-39..Q-42 em `03_documentos/perguntas-ao-cliente.md`. Elas **não bloqueiam o início**: cada task pergunta quando precisa (protocolo em `AGENTS.md`).
+20 perguntas (Q-04..Q-22 e Q-39..Q-42) em `03_documentos/perguntas-ao-cliente.md`. Elas **não bloqueiam o início**: cada task pergunta quando precisa (protocolo em `AGENTS.md`).
 
 ## Fora desta fase
 

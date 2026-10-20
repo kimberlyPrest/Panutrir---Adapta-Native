@@ -39,7 +39,7 @@ T1.3 (antiga), T2.2/T2.3 (staging com SHA), T3.1–T3.3 (quarentena e exportaç�
 - **Sequência da T6.2 e fonte de verdade:** passa a valer apenas `04_fase-atual/matriz-specs-fases.md`, com nova ordem de levas.
 - **Blocos 9–10 da metodologia:** resolvido pela metodologia Out/26 completa (M-01..M-31).
 - **origem=OFICIAL em `parametros_calculo`:** a restrição deixa de existir.
-- **T1.2 — campos e unicidade do ciclo:** definidos na SPEC-1-001. Ambiente e contas viram as perguntas Q-24/Q-25.
+- **T1.2 — campos e unicidade do ciclo:** definidos na SPEC-1-001. Papéis: Léo e Ângelo operam, Paulo aprova; contas por convite.
 
 ## Como as perguntas ao cliente funcionam
 

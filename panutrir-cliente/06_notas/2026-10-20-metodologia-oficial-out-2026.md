@@ -80,5 +80,5 @@
 | P-12 | Share final Indireto | 5,5% da Meta Diretoria |
 | P-13 | Mix de linha | janela 6 meses; convergência 0,50; somente GAP Direto |
 | P-14 | Limiar de baixa relevância | R$300 |
-| P-15 | Exclusão | Panettone (identificação: Q-06) |
+| P-15 | Exclusão | Panettone (descrição/categoria contém "PANETTONE") |
 | P-16 | Tolerância de reconciliação | a definir (Q-20) |

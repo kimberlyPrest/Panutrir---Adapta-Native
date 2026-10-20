@@ -23,7 +23,7 @@ Uma intranet modular no mesmo Supabase:
 | KPI | Definição | Baseline | Alvo |
 |---|---|---|---|
 | K1 — Meta reproduzível | ciclos publicados cuja execução reconcilia (somas em todos os níveis; Out/26 também contra o gabarito) ÷ ciclos publicados | não existe | 100% (zero ciclos = inconclusivo) |
-| K2 — Prazo de publicação | data da publicação × início do mês da meta | até o dia 5 do mês | Q-28 (proposta: antes do 1º dia do mês) |
+| K2 — Prazo de publicação | data da publicação × início do mês da meta | até o dia 5 do mês | publicar antes do 1º dia do mês |
 | K3 — Esforço do ciclo | horas humanas para produzir a meta do mês | medir em Nov/26 (paralelo) | combinar após o baseline |
 | K4 — Custo logístico | custo logístico ÷ faturamento no CD modelo | SPEC-4-001 | combinar após o baseline |
 | K5 — Nível de serviço | entregas realizadas ÷ solicitadas no CD modelo | SPEC-4-001 | combinar após o baseline |
@@ -79,7 +79,7 @@ Uma intranet modular no mesmo Supabase:
 - **RN-04:** só uma execução reconciliada pode ser aprovada e publicada.
 - **RN-05:** versão publicada é imutável; correção gera nova versão com motivo.
 - **RN-06:** a IA não altera, aprova nem publica metas.
-- **RN-07:** sem ajuste manual do número final em nenhum nível (M-31). Mudanças entram por parâmetro ou regra, salvo decisão diferente em Q-27.
+- **RN-07:** sem ajuste manual do número final em nenhum nível (M-31). Mudanças entram por parâmetro ou regra.
 - **RN-08:** não inferir responsável nem criar promotor fictício (M-25, M-27).
 - **RN-09:** REVISAR (< R$300) é alerta, não altera a meta (M-26).
 - **RN-10:** a regra de introdução é literal, inclusive meta zero quando o último mês é zero (M-13). Revoga a antiga RN-12.
@@ -99,7 +99,7 @@ Uma intranet modular no mesmo Supabase:
 - **RNF-06 Portabilidade:** dados, schema e migrations exportáveis em formato aberto.
 - **RNF-07 Desempenho:** execução completa de um ciclo em menos de 15 minutos; consultas do painel em menos de 3 segundos.
 - **RNF-08 Disponibilidade:** falha da IA não impede cálculo, aprovação ou consulta.
-- **RNF-09 Infraestrutura:** Supabase sem pausa por inatividade e com espaço para o histórico (Q-25).
+- **RNF-09 Infraestrutura:** histórico agregado por mês para caber no Supabase; pausa por inatividade tratada pelo runbook.
 
 ## 8. Fora do escopo
 
@@ -111,6 +111,6 @@ Substituir SAP ou Metabase; calcular remuneração; potencial externo (Nielsen/S
 |---|---|---|
 | Perguntas Q-xx sem resposta | parte da regra não implementada | perguntas já prontas, com leitura provável; o gabarito ajuda a decidir |
 | Gabarito não reproduzido | Fase 1 não fecha | testar regime a regime (G-11..G-16) antes do total |
-| Supabase gratuito (pausa, 500 MB) | perda de disponibilidade; carga não cabe | agregar por mês; Pro (Q-25) |
+| Supabase gratuito (pausa, 500 MB) | perda de disponibilidade; carga não cabe | agregar por mês; runbook de pausa |
 | Repositórios públicos no GitHub | exposição de dados e regras do cliente | tornar privados antes do próximo push |
 | Logística sem definição | Fase 4 atrasa | descoberta começa já, em paralelo à Fase 1 |

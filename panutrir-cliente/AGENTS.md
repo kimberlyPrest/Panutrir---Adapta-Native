@@ -12,6 +12,8 @@ Supabase (Auth, Postgres, RLS, Edge Functions, migrations versionadas) + front R
 3. Listar as perguntas `Q-xx` da task e o status de cada uma em `03_documentos/perguntas-ao-cliente.md`.
 
 ## Protocolo de perguntas ao cliente
+**Só pergunte o que muda a implementação:** uma regra de cálculo, o mapeamento de um dado ou o formato de uma saída. Não pergunte o que a metodologia, os dados (cabeçalhos, base de produtos) ou o gabarito já respondem, nem decisões que não alteram o sistema (quem opera, quem aprova, plano de infraestrutura, prazos). Em vez disso, verifique contra o gabarito e siga.
+
 As perguntas **não bloqueiam o início** da task. Quando a task chegar na parte que depende de uma `Q-xx` aberta:
 
 1. **Perguntar:** enviar ao destinatário indicado o texto da pergunta como está no registro, junto com a leitura provável ("confirma ou corrige?"). Marcar `perguntada (data)`.

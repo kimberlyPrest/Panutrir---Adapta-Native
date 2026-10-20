@@ -22,10 +22,9 @@ As datas são indicativas; Matheus confirma com o cliente. A Fase 3 é a primeir
 
 ## 3. Marcos de liberação
 
-- **L1 — Dados reais liberados:** Q-01 (autorização) e Q-25 (Supabase Pro) respondidas. Libera a carga completa da SPEC-1-002.
-- **L2 — Out/26 reproduzido:** CA-1-21 e aceite do Paulo (Q-23). Encerra a Fase 1.
-- **L3 — Nov/26 paralelo aceito:** CA-2-03. Libera o desligamento da planilha.
-- **L4 — Descoberta logística aprovada:** CA-4-04. Libera a construção da Fase 4.
+- **L1 — Out/26 reproduzido:** CA-1-21 e aceite do Paulo. Encerra a Fase 1.
+- **L2 — Nov/26 paralelo aceito:** CA-2-03. Libera o desligamento da planilha.
+- **L3 — Descoberta logística aprovada:** CA-4-04. Libera a construção da Fase 4.
 
 ## 4. Requisitos vinculantes
 

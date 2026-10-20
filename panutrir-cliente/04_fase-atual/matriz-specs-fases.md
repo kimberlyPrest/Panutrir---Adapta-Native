@@ -12,14 +12,14 @@ Legenda: ✔ concluída · ☐ a fazer · 🔒 bloqueada · ✖ cancelada. **Q**
 | — | T2.1 | Contratos e fixtures sintéticas | SPEC-1-002 | Dados | — | — | ✔ 16/09 |
 | — | T2.1b | Contratos × metodologia ago/26 | SPEC-1-002 | Dados | — | — | ✔ 02/10 |
 | — | T4.1 | Modelo do catálogo (reaproveitado com vínculo vigente único) | SPEC-1-004 | Dados | — | — | ✔ 01/10 |
-| A | T1.2 | Ciclo de meta (tabela/RPC), operações renomeadas, papéis reais | SPEC-1-001 | Léo | T1.1 | Q-24, Q-25 | ☐ |
+| A | T1.2 | Ciclo de meta (tabela/RPC), operações renomeadas, papéis reais | SPEC-1-001 | Léo | T1.1 | — | ☐ |
 | A | T1.3 | Remover senha fixa da migration, trocar a senha, contas por convite | SPEC-1-001 | Léo | — | — | ☐ |
-| A | T2.1c | Contrato `vendas` v2 contra as colunas reais; definir `venda_mensal` | SPEC-1-002 | Léo | T2.1b | Q-01, Q-02 | ☐ |
-| A | T3.1 | Parâmetros versionados + sortimento/substituição em tabela; versão Out/26 oficial | SPEC-1-003 | Léo | T2.1b | Q-10, Q-11 | ☐ |
+| A | T2.1c | Contrato `vendas` v2 contra as colunas reais; definir `venda_mensal` | SPEC-1-002 | Léo | T2.1b | — | ☐ |
+| A | T3.1 | Parâmetros versionados + sortimento/substituição em tabela; versão Out/26 oficial | SPEC-1-003 | Léo | T2.1b | Q-10 | ☐ |
 | B | T1.4 | Provar negações por papel e repetição do ciclo | SPEC-1-001 | Ângelo | T1.2, T1.3 | — | ☐ |
-| B | T2.2 | Script de carga agregada mensal, idempotente, com registro | SPEC-1-002 | Léo | T2.1c (Q-25 para a carga completa) | Q-03 | ☐ |
+| B | T2.2 | Script de carga agregada mensal, idempotente, com registro | SPEC-1-002 | Léo | T2.1c | — | ☐ |
 | B | T3.2 | Calendário: dias úteis e IS | SPEC-1-003 | Léo | T3.1 | Q-08, Q-09 | ☐ |
-| B | T4.2 | Carregar DE→PARA atual e produtos (linha, Panettone) | SPEC-1-004 | Léo | T4.1, T2.1c | Q-04, Q-05, Q-06 | ☐ |
+| B | T4.2 | Carregar DE→PARA atual e produtos (linha, Panettone) | SPEC-1-004 | Léo | T4.1, T2.1c | Q-04 | ☐ |
 | C | T2.3 | Carregar Out/24–Set/26 reais e provar totais por mês | SPEC-1-002 | Ângelo | T2.2 | — | ☐ |
 | C | T3.3 | Execução versionada e prova de reprodutibilidade | SPEC-1-003 | Léo | T3.1, T1.2 | — | ☐ |
 | D | T4.3 | Auditoria de estrutura (gabarito: 27 clientes) | SPEC-1-004 | Ângelo | T4.2, T2.3 | Q-07 | ☐ |
@@ -37,7 +37,7 @@ Legenda: ✔ concluída · ☐ a fazer · 🔒 bloqueada · ✖ cancelada. **Q**
 | L | T7.2 | Painel de controles do ciclo | SPEC-1-007 | Léo | T7.1, T4.3 | — | ☐ |
 | L | T7.3 | Consulta drill-down com memória de cálculo | SPEC-1-007 | Léo | T6.4 | — | ☐ |
 | L | T7.4 | Exportação Cliente × SKU e consolidações | SPEC-1-007 | Léo | T6.4 | Q-22 | ☐ |
-| M | T7.5 | Demonstração de Out/26 e aceite da Fase 1 | SPEC-1-007 | Kim + Ângelo | T7.2, T7.3, T7.4 | Q-23 | ☐ |
+| M | T7.5 | Demonstração de Out/26 e aceite da Fase 1 | SPEC-1-007 | Kim + Ângelo | T7.2, T7.3, T7.4 | — | ☐ |
 
 ### Tasks canceladas pela EMENDA 02
 
@@ -55,15 +55,15 @@ Legenda: ✔ concluída · ☐ a fazer · 🔒 bloqueada · ✖ cancelada. **Q**
 | ID | Task | SPEC | Depende de | Q | Status |
 |---|---|---|---|---|---|
 | F2-T1.1 | Avanço das janelas e herança de parâmetros | SPEC-2-001 | Fase 1 aceita | — | ☐ |
-| F2-T1.2 | Carga recorrente do mês fechado | SPEC-2-001 | F2-T1.1 | (Q-03) | ☐ |
-| F2-T1.3 | Nov/26 em paralelo com o processo atual | SPEC-2-001 | F2-T1.2 | Q-29 | ☐ |
+| F2-T1.2 | Carga recorrente do mês fechado | SPEC-2-001 | F2-T1.1 | — | ☐ |
+| F2-T1.3 | Nov/26 em paralelo com o processo atual | SPEC-2-001 | F2-T1.2 | — | ☐ |
 | F2-T2.1 | Tela de parâmetros versionados | SPEC-2-002 | Fase 1 aceita | — | ☐ |
-| F2-T2.2 | Regras por rede (sortimento, substituição, exclusão) | SPEC-2-002 | F2-T2.1 | Q-26 | ☐ |
+| F2-T2.2 | Regras por rede (sortimento, substituição, exclusão) | SPEC-2-002 | F2-T2.1 | — | ☐ |
 | F2-T3.1 | Execuções de simulação | SPEC-2-003 | F2-T2.1 | — | ☐ |
 | F2-T3.2 | Comparação de cenários e promoção | SPEC-2-003 | F2-T3.1 | — | ☐ |
-| F2-T4.1 | Aprovar/publicar com bloqueio e versões | SPEC-2-004 | F2-T1.1 | Q-27 | ☐ |
+| F2-T4.1 | Aprovar/publicar com bloqueio e versões | SPEC-2-004 | F2-T1.1 | — | ☐ |
 | F2-T4.2 | Consulta por perfil | SPEC-2-004 | F2-T4.1 | — | ☐ |
-| F2-T4.3 | Entrega ao Metabase e medição de K2 (Dez/26) | SPEC-2-004 | F2-T4.1 | Q-28 | ☐ |
+| F2-T4.3 | Entrega ao Metabase e medição de K2 (Dez/26) | SPEC-2-004 | F2-T4.1 | — | ☐ |
 
 ## Fase 3 — Acompanhamento e indicadores (planejada)
 
@@ -71,9 +71,9 @@ Legenda: ✔ concluída · ☐ a fazer · 🔒 bloqueada · ✖ cancelada. **Q**
 |---|---|---|---|---|---|
 | F3-T1.1 | Carga recorrente do realizado | SPEC-3-001 | Fase 2 aceita | Q-30 | ☐ |
 | F3-T1.2 | Painel realizado × meta × projeção | SPEC-3-001 | F3-T1.1 | — | ☐ |
-| F3-T2.1 | Indicador de trocas | SPEC-3-002 | F3-T1.1 | Q-31 | ☐ |
-| F3-T2.2 | Indicador de visitas | SPEC-3-002 | Q-31 com fonte | — | ☐ |
-| F3-T3.1 | Piso por promotor e concentração de REVISAR | SPEC-3-003 | Fase 2 aceita | Q-32 | ☐ |
+| F3-T2.1 | Indicador de trocas | SPEC-3-002 | F3-T1.1 | — | ☐ |
+| F3-T2.2 | Indicador de visitas | SPEC-3-002 | F3-T1.1 | Q-31 | ☐ |
+| F3-T3.1 | Piso por promotor e concentração de REVISAR | SPEC-3-003 | Fase 2 aceita | — | ☐ |
 | F3-T3.2 | Visão por Key Account | SPEC-3-003 | F3-T3.1 | — | ☐ |
 | F3-T4.1 | Cadastro de campanha e venda incremental (opcional) | SPEC-3-004 | Fase 2 aceita | Q-33 | ☐ |
 | F3-T4.2 | Meta incremental no ciclo e relatório pós-campanha (opcional) | SPEC-3-004 | F3-T4.1, F3-T1.2 | — | ☐ |
@@ -97,7 +97,7 @@ Legenda: ✔ concluída · ☐ a fazer · 🔒 bloqueada · ✖ cancelada. **Q**
 |---|---|---|---|---|---|
 | F5-T1.1 | Meta → volume por CD/semana | SPEC-5-001 | Fases 2 e 4 aceitas | — | ☐ |
 | F5-T1.2 | Volume × capacidade e alertas | SPEC-5-001 | F5-T1.1 | — | ☐ |
-| F5-T2.1 | IA explica a meta a partir da memória de cálculo | SPEC-5-002 | Fase 2 aceita | Q-38 | ☐ |
+| F5-T2.1 | IA explica a meta a partir da memória de cálculo | SPEC-5-002 | Fase 2 aceita | — | ☐ |
 | F5-T2.2 | Sugestões com aceite humano auditado | SPEC-5-002 | F5-T2.1 | — | ☐ |
 | F5-T3.1 | Medição final dos KPIs | SPEC-5-003 | F5-T1.2, F5-T2.2 | — | ☐ |
 | F5-T3.2 | Runbooks e treinamento | SPEC-5-003 | F5-T3.1 | — | ☐ |

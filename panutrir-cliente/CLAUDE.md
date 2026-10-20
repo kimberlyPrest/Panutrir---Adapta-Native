@@ -15,6 +15,6 @@ O sistema calcula a meta de Out/26 com dados reais pela metodologia oficial e re
 - Perguntas ao cliente: `03_documentos/perguntas-ao-cliente.md`.
 
 ## Limites da Fase 1
-- Dados reais **permitidos** no Supabase do projeto, depois de Q-01 e Q-25. Nunca em repositório (os repositórios são públicos).
+- Dados reais **permitidos** no Supabase do projeto. Nunca em repositório (os repositórios são públicos).
 - Sem aprovação/publicação, consulta pela equipe, cenários, logística ou IA.
 - A EMENDA 01 (ago/26) está superada; não usar `2026-09-23-metodologia-oficial-ago-2026.md`.

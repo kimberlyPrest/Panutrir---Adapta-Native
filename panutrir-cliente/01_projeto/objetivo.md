@@ -4,7 +4,7 @@ Construir a Intranet Panutrir: o sistema calcula, explica, aprova e publica a me
 
 ## Critérios de sucesso
 - **K1:** 100% das metas publicadas reconciliam (somas em todos os níveis; Out/26 também contra o gabarito). Zero publicações = inconclusivo.
-- **K2:** meta publicada no prazo combinado (Q-28), contra o baseline atual de até o dia 5.
+- **K2:** meta publicada antes do 1º dia do mês, contra o baseline atual de até o dia 5.
 - **K3:** esforço humano do ciclo medido em Nov/26 e reduzido.
 - **K4/K5:** custo logístico ÷ faturamento e nível de serviço no CD modelo, contra o baseline da descoberta.
 
