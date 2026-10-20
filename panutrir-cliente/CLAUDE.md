@@ -1,16 +1,20 @@
 # Panutrir — contexto do cliente
 
-**Projeto:** Sistema Inteligente de Metas Comerciais  
-**Consultora:** Kim  
-**Champion operacional:** Ângelo  
-**Arquitetura aprovada:** Supabase  
-**Fase ativa:** 1 — Base confiável e primeira simulação
+**Projeto:** Intranet Panutrir — Metas Comerciais (módulo 1) e Logística (módulo 2)  
+**Consultora:** Kim · **CSM:** Matheus  
+**Dono do projeto:** Paulo · **Implementação:** Léo · **Champion operacional:** Ângelo  
+**Arquitetura:** Supabase + front React no Skip  
+**Fase ativa:** 1 — Motor de meta Cliente × SKU com dados reais (EMENDA 02/2026)
 
-## Resultado esperado
-Transformar dados comerciais homologados em ciclos de metas simuláveis, explicáveis, aprováveis e acompanháveis, preservando decisão humana e auditoria.
+## Resultado esperado da fase
+O sistema calcula a meta de Out/26 com dados reais pela metodologia oficial e reproduz a planilha do Paulo: R$13.000.000,00 fechados, gabarito batendo, cada número explicado.
+
+## Fonte da verdade
+- Cálculo: `06_notas/2026-10-20-metodologia-oficial-out-2026.md` (regras M-xx, gabarito G-xx, parâmetros P-xx).
+- Ordem e status das tasks: `04_fase-atual/matriz-specs-fases.md`.
+- Perguntas ao cliente: `03_documentos/perguntas-ao-cliente.md`.
 
 ## Limites da Fase 1
-- Somente fixtures sintéticas.
-- Os CSVs reais já recebidos pela consultora não entram nesta fase.
-- Sem integrações diretas, publicação produtiva, campanhas ou IA.
-- Tasks e provas estão em `04_fase-atual/`.
+- Dados reais **permitidos** no Supabase do projeto, depois de Q-01 e Q-25. Nunca em repositório (os repositórios são públicos).
+- Sem aprovação/publicação, consulta pela equipe, cenários, logística ou IA.
+- A EMENDA 01 (ago/26) está superada; não usar `2026-09-23-metodologia-oficial-ago-2026.md`.

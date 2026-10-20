@@ -1,56 +1,44 @@
-# Escopo definitivo — Panutrir
+# Escopo — Intranet Panutrir (Metas + Logística)
 
-**Produto:** Sistema Inteligente de Metas Comerciais  
-**Estado:** APROVADO pela consultora e pelo CSM em 14/09/2026.  
-**Direção:** núcleo determinístico e explicável, com IA assistiva e decisão humana.
+**Estado:** REVISADO pela EMENDA 02/2026 em 20/10/2026 — aguardando aceite de Paulo e Matheus  
+**Prazo:** 4 meses reiniciados a partir de 06/10/2026 (combinado com Erik) → **até 06/02/2027**  
+**Direção:** primeiro a meta calculada com dados reais; governança só o necessário; logística como segundo módulo.
 
 ## 1. Resultado contratado
 
-Ao final das cinco fases, a Panutrir terá um processo único para importar e governar dados comerciais, construir cenários de metas, reconciliar ambição financeira com histórico, aprovar/publicar uma versão oficial e acompanhar atingimento e efetividade de campanhas. Toda meta será reproduzível e explicável.
+Ao final, a Panutrir gera, aprova e publica a meta mensal Cliente × SKU pela própria metodologia, sem planilha, fechando com a Meta Diretoria e explicando cada número. Acompanha o realizado. O CD modelo monta cargas com proposta de menor custo, e a meta alimenta a previsão de volume logístico.
 
-## 2. Entregas por capacidade
+## 2. Fases
 
-1. **Dados e baseline confiáveis:** carga controlada, quarentena, catálogo, snapshot e painel inicial.
-2. **Motor e cenários:** cálculo determinístico, exceções, abertura/lançamentos, visitas planejadas e reconciliação.
-3. **Governança da meta:** workflow, alçadas, versionamento, publicação imutável e consulta por perfil.
-4. **Acompanhamento comercial:** atingimento, trocas, visitas homologadas e análise de campanhas.
-5. **Inteligência assistiva:** recomendações explicáveis, aceite humano, monitoramento e estabilização.
+| Fase | Entrega demonstrável | SPECs | Janela indicativa |
+|---|---|---|---|
+| **1 — Motor de meta Cliente × SKU com dados reais** | Out/26 reproduzido no sistema: R$13MM fechados, gabarito batendo, consulta com memória de cálculo | SPEC-1-001..007 | 20/10 – 14/11/2026 |
+| **2 — Ciclo mensal operável** | Nov/26 em paralelo com a planilha; Dez/26 publicado pelo sistema, com cenários e consulta da equipe | SPEC-2-001..004 | 17/11 – 05/12/2026 |
+| **3 — Acompanhamento e indicadores** | realizado × meta, trocas, visitas, diagnósticos (ROI promocional opcional) | SPEC-3-001..004 | 08/12 – 19/12/2026 |
+| **4 — Módulo Logística** | CD modelo com proposta de cargas comparada ao plano manual | SPEC-4-001..003 (descoberta começa em 21/10) | 05/01 – 23/01/2027 |
+| **5 — Integração e IA assistiva** | meta → volume por CD; IA explica e sugere; KPIs finais e passagem | SPEC-5-001..003 | 26/01 – 06/02/2027 |
 
-## 3. Requisitos vinculantes
+As datas são indicativas; Matheus confirma com o cliente. A Fase 3 é a primeira a ser enxugada se a Fase 1 atrasar (a SPEC-3-004 é opcional).
 
-São vinculantes os RF-01 a RF-26, RN-01 a RN-18 e RNF-01 a RNF-11 definidos no PRD. Nenhuma fase pode reduzir rastreabilidade, explicabilidade ou decisão humana.
+## 3. Marcos de liberação
 
-## 4. Estratégia de implementação
+- **L1 — Dados reais liberados:** Q-01 (autorização) e Q-25 (Supabase Pro) respondidas. Libera a carga completa da SPEC-1-002.
+- **L2 — Out/26 reproduzido:** CA-1-21 e aceite do Paulo (Q-23). Encerra a Fase 1.
+- **L3 — Nov/26 paralelo aceito:** CA-2-03. Libera o desligamento da planilha.
+- **L4 — Descoberta logística aprovada:** CA-4-04. Libera a construção da Fase 4.
 
-- Fase 1 usa exclusivamente fixtures sintéticas para demonstrar o fluxo; os CSVs reais já recebidos não serão usados nem compartilhados nesta fase.
-- A carga produtiva e o baseline oficial ficam para revalidação posterior contra o schema real e a fonte oficial.
-- O cálculo começa determinístico; IA não é dependência do caminho crítico.
-- Integrações e fontes externas entram somente após prova de contrato, qualidade e permissão.
-- SPECs são geradas em onda: somente a Fase 1 está detalhada neste corte.
+## 4. Requisitos vinculantes
 
-## 5. Critérios globais
+RF-01..RF-31, RN-01..RN-15 e RNF-01..RNF-09 do PRD v1.0.
 
-- **CG-01:** 100% das metas publicadas reais têm trilha completa; zero metas publicadas produz resultado inconclusivo.
-- **CG-02:** uma versão publicada pode ser reproduzida com o snapshot e parâmetros preservados.
-- **CG-03:** lote com erro grave mantém o estado anterior e gera pendência visível e log correlacionado; carga parcial é proibida.
-- **CG-04:** nenhuma recomendação de IA altera meta sem decisão humana registrada.
-- **CG-05:** cada KPI informa numerador, denominador, período, exclusões e fonte.
+## 5. Perguntas em aberto
+
+Não bloqueiam o início das SPECs. Cada task pergunta quando precisa e implementa conforme a resposta (`03_documentos/perguntas-ao-cliente.md`, protocolo em `AGENTS.md`).
 
 ## 6. Fronteiras
 
-O projeto não otimiza logística, não substitui ERP/BI, não redefine remuneração e não executa campanhas. Potencial externo e visitas realizadas dependem de fontes homologadas. O sistema pode preparar contratos de integração, mas não simular acesso inexistente.
+Não substitui SAP/Metabase, não calcula remuneração, não usa potencial externo e não executa campanhas. Logística limitada ao CD modelo; expandir para os demais CDs é evolução posterior.
 
-## 7. Gates de execução
+## 7. Arquitetura
 
-- **G0 — Arquitetura:** APROVADO — Supabase é a plataforma oficial da Fase 1. Auth, Postgres, RLS, Storage e migrations devem ser versionados e testados.
-- **G1 — Dados (dono: Ângelo/cliente):** CSV completo recebido, schema e vigências conferidos, uso autorizado e volume representativo validado. O prazo original de 31/08 venceu. Plano B: avaliar a junção controlada das bases de vendas detalhadas e metas/atingimentos; se não preservar chaves e vigências, o baseline real permanece bloqueado. Revalidação das SPECs contra o schema real é obrigatória.
-- **G2 — Fonte oficial (dono: Paulo/cliente):** decisão documentada entre fonte atual e futura, incluindo período de transição.
-- **G3 — Segurança (donos: cliente + Adapta):** papéis, política de retenção e responsáveis aprovados.
-- **G4 — Ciclo-piloto (donos: Ângelo + substituto a nomear pelo cliente):** mês, equipes, recortes, SLA de aprovação, substitutos e escalação definidos. O baseline provisório só é substituído após ciclo real elegível.
-- **G5 — Visitas (dono: Gerência Comercial):** confirmar existência do roteiro estruturado, política do calendário e fonte do realizado antes de usar esse indicador; sem isso, RF-14 fica desligado.
-- **G6 — Potencial externo (dono: cliente):** contrato/licença, acesso, granularidade, atualização, denominador e qualidade Nielsen/Scanntech comprovados. Sem G6, K3 oficial fica explicitamente inconclusivo e os proxies não o substituem.
-- **G7 — Campanhas (donos: cliente + Adapta):** contrato mínimo define fonte de exposição, granularidade, período, produto/região, custo, chave de junção, cobertura mínima e regra analítica. Sem contrato suficiente, F4 entrega cadastro + acompanhamento e adia análise de efetividade.
-
-## 8. Arquitetura aprovada
-
-Supabase: Auth, Postgres, RLS, Storage e migrations versionadas. A Fase 1 usa exclusivamente fixtures sintéticas e não recebe os CSVs reais já disponíveis.
+Supabase (Auth, Postgres, RLS, Edge Functions, migrations) + front React no Skip, um único projeto para os dois módulos. Cálculo determinístico no banco/Edge Function; IA só na Fase 5 e fora do caminho crítico.

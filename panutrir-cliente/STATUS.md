@@ -1,12 +1,14 @@
 # STATUS
 
-- **Escopo:** aprovado pela consultora e pelo CSM em 14/09/2026.
-- **Arquitetura:** Supabase.
-- **Fase ativa:** Fase 1 — Base confiável e primeira simulação.
-- **SPECs:** 6 aprovadas.
-- **Tasks:** 19 em 7 levas — 4 concluídas (T1.1, T2.1, T2.1b e T4.1); T1.2 está bloqueada após análise; T6.2 continua bloqueada por divergências de sequência e metodologia.
-- **T1.2 / SPEC-1-001:** T1.1 confirmada concluída em `fase.md` (embora a matriz de rastreabilidade ainda esteja desatualizada). Leitura do banco: 6 papéis, 7 operações, 42 decisões; somente uma atribuição ativa de papel, `gestor_dados`; nenhuma tabela de ciclos. O Supabase tem um único projeto listado e nenhuma branch de desenvolvimento. Antes de implementar, Kim deve confirmar campos do ciclo e semântica de repetição/duplicidade; cliente/infra deve confirmar ambiente seguro e provisionamento de contas sintéticas `operador` e `consulta`.
-- **Emenda ativa:** EMENDA 01/2026 (metodologia oficial de cálculo da meta, memória de cálculo ago/2026) — T2.1b concluída em 02/10/2026; T6.2 requer definição completa, ordem de dependências e provas esperadas antes de prosseguir; CA-1-07a continua bloqueante.
-- **Dados:** somente fixtures sintéticas na Fase 1; CSVs reais não foram usados.
-- **Skip:** versão 0.0.14 (hash 4cb3d8b) criada por engano ao acionar QA durante consulta; a ferramenta reportou setup, análise estática, build, integrações e testes sem erros. Não houve chamada de publicação. O projeto está marcado como publicado; `.skip.config.json` permanece como alteração pendente.
-- **Primeira leva:** T1.1 ✔ · T2.1 ✔ · T2.1b ✔ · T4.1 ✔.
+- **Programa:** reiniciado pela EMENDA 02/2026 (20/10/2026). Prazo de 4 meses a partir de 06/10 → até 06/02/2027.
+- **Escopo:** Intranet Panutrir — Metas (Fases 1–3), Logística (Fase 4), integração e IA (Fase 5). Escopo revisado aguardando aceite de Paulo e Matheus.
+- **Fase ativa:** 1 — Motor de meta Cliente × SKU com dados reais (20/10 – 14/11, indicativo).
+- **Fonte do cálculo:** metodologia Out/26 (`06_notas/2026-10-20-metodologia-oficial-out-2026.md`). A EMENDA 01 foi superada.
+- **SPECs:** Fase 1 com 7 aprovadas; Fases 2–5 com 14 planejadas em `03_documentos/specs-programa/`.
+- **Tasks da Fase 1:** 30, sendo 4 concluídas e aproveitadas (T1.1, T2.1, T2.1b, T4.1) e 26 a fazer, em 13 levas (A–M).
+- **Próxima leva (A):** T1.2 · T1.3 · T2.1c · T3.1.
+- **Perguntas ao cliente:** 42 registradas, nenhuma respondida. Não bloqueiam o início; cada task pergunta quando precisa.
+- **Bloqueios anteriores (T1.2, T6.2):** resolvidos pela EMENDA 02.
+- **Dados:** reais permitidos no Supabase depois de Q-01 (autorização) e Q-25 (plano Pro). Nunca em repositório.
+- **Alertas:** (1) os repositórios de contexto e de código estão **públicos** no GitHub; (2) a migration do repositório de código tem senha fixa de um usuário real (T1.3).
+- **Logística:** descoberta (SPEC-4-001) começa em paralelo; reunião com Marcelo Néquio a agendar por Matheus.

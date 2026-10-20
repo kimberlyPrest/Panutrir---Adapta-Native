@@ -1,3 +1,5 @@
+> **SUPERADA em 20/10/2026 pela EMENDA 02/2026.** Não usar para implementação. Fonte vigente: `06_notas/2026-10-20-metodologia-oficial-out-2026.md`.
+
 # Metodologia oficial de cálculo da meta — ago/2026
 
 > Transposição integral da memória de cálculo oficial enviada pelo cliente

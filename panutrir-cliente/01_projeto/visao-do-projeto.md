@@ -1,10 +1,10 @@
 # Visão do projeto
 
-## Arco em cinco fases
-1. **Base confiável e primeira simulação:** dados sintéticos, qualidade, catálogo, snapshot e painel inicial.
-2. **Motor determinístico e cenários:** cálculo, exceções e reconciliação top-down × bottom-up.
-3. **Aprovação, publicação e consulta:** alçadas, versionamento e meta oficial por perfil.
-4. **Acompanhamento e efetividade comercial:** realizado homologado e análise de campanhas.
-5. **IA assistiva e estabilização:** recomendações explicáveis, decisão humana e medição final.
+## Arco em cinco fases (EMENDA 02/2026)
+1. **Motor de meta Cliente × SKU com dados reais:** Out/26 reproduzido no sistema, com gabarito batendo e cada número explicado.
+2. **Ciclo mensal operável:** o próximo mês gerado automaticamente, parâmetros pela tela, cenários, aprovação, publicação e consulta pela equipe.
+3. **Acompanhamento e indicadores:** realizado × meta, trocas, visitas, diagnósticos e ROI promocional (opcional).
+4. **Módulo Logística:** descoberta com os CDs (em paralelo desde a Fase 1) e montagem de cargas de menor custo no CD modelo.
+5. **Integração e IA assistiva:** meta → volume por CD; IA explica e sugere com aceite humano; KPIs finais e passagem.
 
-Somente a Fase 1 está aberta e detalhada neste momento.
+A Fase 1 está aberta e detalhada. As Fases 2–5 estão planejadas em `03_documentos/specs-programa/` e são revalidadas na abertura de cada uma.

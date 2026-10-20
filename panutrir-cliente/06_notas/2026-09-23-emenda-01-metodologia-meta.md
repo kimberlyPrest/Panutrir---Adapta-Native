@@ -1,3 +1,5 @@
+> **SUPERADA em 20/10/2026 pela EMENDA 02/2026.** Não usar para implementação. Fonte vigente: `06_notas/2026-10-20-metodologia-oficial-out-2026.md`.
+
 # 2026-09-23 — EMENDA 01/2026: metodologia oficial de cálculo da meta
 
 **Contexto**: o cliente (Paulo) enviou a memória de cálculo oficial da meta

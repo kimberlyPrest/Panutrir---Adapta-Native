@@ -1,12 +1,12 @@
 # Objetivo do projeto
 
-Criar um sistema de definição e distribuição de metas comerciais que centralize dados, simule cenários, explique a origem de cada meta, preserve aprovação humana e permita acompanhar resultados e efetividade de campanhas.
+Construir a Intranet Panutrir: o sistema calcula, explica, aprova e publica a meta mensal Cliente × SKU pela metodologia oficial da Panutrir, acompanha o realizado e, num segundo módulo, monta cargas logísticas de menor custo. A meta alimenta a previsão de volume da logística.
 
 ## Critérios de sucesso
-- 100% das metas publicadas reais rastreáveis; denominador zero é inconclusivo.
-- Metas oficiais disponíveis até D-1, medindo separadamente atraso técnico e humano.
-- Captura de potencial condicionada à fonte homologada; proxies internos não substituem o KPI oficial.
-- Efetividade de campanhas tratada como indicador exploratório até homologação do contrato de dados.
+- **K1:** 100% das metas publicadas reconciliam (somas em todos os níveis; Out/26 também contra o gabarito). Zero publicações = inconclusivo.
+- **K2:** meta publicada no prazo combinado (Q-28), contra o baseline atual de até o dia 5.
+- **K3:** esforço humano do ciclo medido em Nov/26 e reduzido.
+- **K4/K5:** custo logístico ÷ faturamento e nível de serviço no CD modelo, contra o baseline da descoberta.
 
 ## Fora de escopo
-Logística/rotas, S&OP, substituição de ERP/BI, revisão da remuneração, decisão autônoma por IA e execução de campanhas.
+Substituir SAP/Metabase, calcular remuneração, potencial externo (Nielsen/Scanntech), CRM/funil comercial, S&OP e decisão autônoma por IA.
