@@ -15,7 +15,7 @@ Legenda: ✔ concluída · ☐ a fazer · 🔒 bloqueada · ⏳ implementada, ag
 | A | T1.2 | Ciclo de meta (tabela/RPC), operações renomeadas, papéis reais | SPEC-1-001 | Léo | T1.1 | — | 🔒 DÚVIDAS para a Kim (22/10) |
 | A | T1.3 | Remover senha fixa da migration, trocar a senha, contas por convite | SPEC-1-001 | Léo | — | — | ☐ |
 | A | T2.1c | Contrato `vendas` v2 contra as colunas reais; definir `venda_mensal` | SPEC-1-002 | Léo | T2.1b | — | ✔ 24/10 |
-| A | T3.1 | Parâmetros versionados + sortimento/substituição em tabela; versão Out/26 oficial | SPEC-1-003 | Léo | T2.1b | Q-10 | ⏳ 24/10 aguarda teste humano |
+| A | T3.1 | Parâmetros versionados + sortimento/substituição em tabela; versão Out/26 oficial | SPEC-1-003 | Léo | T2.1b | Q-10 | ✔ 24/10 |
 | B | T1.4 | Provar negações por papel e repetição do ciclo | SPEC-1-001 | Ângelo | T1.2, T1.3 | — | ☐ |
 | B | T2.2 | Script de carga agregada mensal, idempotente, com registro | SPEC-1-002 | Léo | T2.1c | — | ☐ |
 | B | T3.2 | Calendário: dias úteis e IS | SPEC-1-003 | Léo | T3.1 | Q-08, Q-09 | ☐ |
@@ -24,7 +24,7 @@ Legenda: ✔ concluída · ☐ a fazer · 🔒 bloqueada · ⏳ implementada, ag
 | C | T3.3 | Execução versionada e prova de reprodutibilidade | SPEC-1-003 | Léo | T3.1, T1.2 | — | ☐ |
 | D | T4.3 | Auditoria de estrutura (gabarito: 27 clientes) | SPEC-1-004 | Ângelo | T4.2, T2.3 | Q-07 | ☐ |
 | D | T5.1 | Universo elegível, exclusões e sortimento; fixture calculada à mão | SPEC-1-005 | Léo | T2.3, T3.1, T4.2 | Q-41 | ☐ |
-| E | T5.2 | Motor 24M para maduros | SPEC-1-005 | Léo | T5.1, T3.2 | Q-12, Q-13, Q-15 | ☐ |
+| E | T5.2 | Motor 24M para maduros | SPEC-1-005 | Léo | T5.1, T3.2 | Q-12, Q-13, Q-15, **Q-10b** | ☐ |
 | E | T5.3 | Introdução e introdução com zero | SPEC-1-005 | Léo | T5.1 | Q-14 | ☐ |
 | F | T5.4 | Piso técnico | SPEC-1-005 | Léo | T5.2 | Q-39 | ☐ |
 | F | T5.5 | Substituição PlufiNut → Pão de Leite (Assaí SP) | SPEC-1-005 | Léo | T5.2, T5.3 | Q-16 | ☐ |
