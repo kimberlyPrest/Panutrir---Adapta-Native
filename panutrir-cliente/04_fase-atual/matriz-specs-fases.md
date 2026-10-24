@@ -17,7 +17,7 @@ Legenda: ✔ concluída · ☐ a fazer · 🔒 bloqueada · ⏳ implementada, ag
 | A | T2.1c | Contrato `vendas` v2 contra as colunas reais; definir `venda_mensal` | SPEC-1-002 | Léo | T2.1b | — | ✔ 24/10 |
 | A | T3.1 | Parâmetros versionados + sortimento/substituição em tabela; versão Out/26 oficial | SPEC-1-003 | Léo | T2.1b | Q-10 | ✔ 24/10 |
 | B | T1.4 | Provar negações por papel e repetição do ciclo | SPEC-1-001 | Ângelo | T1.2, T1.3 | — | ☐ |
-| B | T2.2 | Script de carga agregada mensal, idempotente, com registro | SPEC-1-002 | Léo | T2.1c | — | ☐ |
+| B | T2.2 | Script de carga agregada mensal, idempotente, com registro | SPEC-1-002 | Léo | T2.1c | — | ⏳ 24/10 aguarda teste humano |
 | B | T3.2 | Calendário: dias úteis e IS | SPEC-1-003 | Léo | T3.1 | Q-08, Q-09 | ☐ |
 | B | T4.2 | Carregar DE→PARA atual e produtos (linha, Panettone) | SPEC-1-004 | Léo | T4.1, T2.1c | Q-04 | ☐ |
 | C | T2.3 | Carregar Out/24–Set/26 reais e provar totais por mês | SPEC-1-002 | Ângelo | T2.2 | — | ☐ |
