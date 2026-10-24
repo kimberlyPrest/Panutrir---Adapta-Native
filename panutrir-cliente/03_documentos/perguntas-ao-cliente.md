@@ -14,7 +14,7 @@ As perguntas **não bloqueiam o início** das SPECs. A task indicada pergunta qu
 | Q-07 | SPEC-1-004 / T4.3 | Ângelo | O que torna um supervisor "válido" (M-27)? Existe uma lista de supervisores ativos? | Supervisor presente na lista ativa; código vazio ou desligado é inválido. | aberta | |
 | Q-08 | SPEC-1-003 / T3.2 | Paulo | Como se calcula o Índice Sazonal: um índice por mês para a empresa toda, ou por linha/cliente? Qual janela e método? Pode enviar a tabela de IS dos 12 meses? | Um IS por mês-calendário para a empresa, enviado pronto (Out = 1,0319). | aberta | |
 | Q-09 | SPEC-1-003 / T3.2 | Paulo | Os 22 dias úteis de Out/26 são seg–sex sem descontar feriados? Os meses do histórico usam a mesma regra? | Seg–sex sem feriados (Out/26 tem 22 dias de seg–sex, e o feriado de 12/10 não foi descontado). | aberta | |
-| Q-10 | SPEC-1-003 / T3.1 | Paulo | O G de 2,591659% é informado pela Diretoria a cada mês ou calculado? Se calculado, como? | Informado a cada ciclo. | aberta | |
+| Q-10 | SPEC-1-003 / T3.1 | Paulo | O G de 2,591659% é informado pela Diretoria a cada mês ou calculado? Se calculado, como? | **Calculado** — a leitura provável anterior ("informado a cada ciclo") foi corrigida pelo cliente | respondida (24/10/2026, Alex) | "Calculado" |
 | Q-12 | SPEC-1-005 / T5.2 | Paulo | Na dessazonalização (M-08), cada mês histórico é dividido pelo IS do seu próprio mês-calendário? | Sim. | aberta | |
 | Q-13 | SPEC-1-005 / T5.2 | Paulo | A média de cada bloco (M-09) é simples sobre todos os meses (6, 6 e 12), com mês sem venda contando como zero? Meses negativos entram? | Sim, zero incluído e negativo mantido. | aberta | |
 | Q-14 | SPEC-1-005 / T5.3 | Paulo | Os 12 meses (M-12) contam da primeira venda do SKU na rede (ou no cliente, se avulso)? O primeiro mês de meta é o seguinte à primeira venda? | Sim nas duas. | aberta | |
@@ -30,6 +30,12 @@ As perguntas **não bloqueiam o início** das SPECs. A task indicada pergunta qu
 | Q-40 | SPEC-1-006 / T6.3 | Paulo | Se um responsável recebe GAP numa linha em que todas as suas combinações têm Meta Original zero, para onde vai esse GAP? | Para a outra linha do mesmo responsável. | aberta | |
 | Q-41 | SPEC-1-005 / T5.1 | Paulo | Os 27 clientes sem estrutura ficam fora das 29.003 combinações e da Meta Original, ou só fora da distribuição do GAP? | Fora de tudo. | aberta | |
 | Q-42 | SPEC-1-006 / T6.2 | Paulo | A média de 29,4832% é o share Especial da empresa (só Direto?) ou a média simples dos shares dos responsáveis? | Share da empresa no Direto, Abr–Set/26. | aberta | |
+
+### Desdobramento da Q-10 (aberta, não bloqueia a T3.1)
+
+| ID | SPEC / task | Para | Pergunta | Situação |
+|---|---|---|---|---|
+| Q-10b | SPEC-1-005 / T5.2 | Paulo / Kim | **Como** o G é calculado? A fórmula 40% × G histórico + 60% × G últimos 6 meses existe só no modelo de **ago/26** (itens 4.1–4.3), que a EMENDA 02 superou. O `M-11` de Out/26 apenas fixa o valor do mês e não define o cálculo. | aberta — sem essa resposta a T5.2 usaria G fixo, que só serve para Out/26 |
 
 ## Fase 3
 
