@@ -1,14 +1,14 @@
 # Estado atual — Adapta Cliente
 
-- task_id: T3.1
+- task_id: T2.2
 - champion: Ângelo
-- spec: 04_fase-atual/specs/SPEC-1-003.md
-- etapa: concluida
-- autorizacao_implementacao: confirmada 2026-10-24T15:17-03:00 — mensagem do Alex: "pode"
-- teste_humano: aprovado 2026-10-24T17:05-03:00 — mensagem do Alex: "Aprovadp"
-- verificacao_automatica: passou — reverificação do zero na conclusão: 1 versão oficial (OUT-2026-v1) com 16 parâmetros e valores conferidos (P-02 13.000.000,00; P-05 1,0319; P-06 22; P-07 0,02591659; P-12 0,055; P-14 300,00); UPDATE em P-07 recusado (23001); DELETE em P-02 recusado (23001); criar versão nova mudando P-07 preserva a oficial e gera rascunho com 16 parâmetros + 5 SKUs + 1 substituição clonados; versão de teste removida e restou apenas a oficial; `set role anon` vê 0; nenhum segredo no diff; nenhum dado real de cliente nos artefatos.
-- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-10-24-1706-versao-imutavel-trigger-rascunho.md e AP-2026-10-24-1707-resposta-cliente-corrige-leitura-provavel.md
-- ultima_acao: T3.1 concluída em 24/10/2026 após teste humano aprovado e Q-10 respondida ("Calculado"). Atualizados matriz, SPEC-1-003 (resposta da Q-10), STATUS (6 de 30 = 20%), changelog e o registro central de perguntas.
-- proxima_acao: aguardar decisão do Alex sobre a próxima task — elegíveis: T1.3 (senha exposta, aguardando aval para troca) e T2.2 (carga agregada, depende só da T2.1c concluída)
-- atualizado_em: 2026-10-24T17:10:00-03:00
-- observacao: a resposta da Q-10 ("G é calculado") NÃO altera a T3.1 — o valor 0,02591659 continua sendo o G oficial de Out/26 e a tabela guarda o valor da versão; quem calcula é o motor (T5.x). Mas abriu uma DÚVIDA real para a Kim: a fórmula de cálculo do G (40% histórico + 60% recente) existe apenas no modelo de ago/26, que a EMENDA 02 superou; o M-11 de Out/26 só fixa o valor e não define como obtê-lo. Sem essa definição, a T5.2 não consegue calcular G para Nov/26 em diante.
+- spec: 04_fase-atual/specs/SPEC-1-002.md
+- etapa: aguardando_teste_humano
+- autorizacao_implementacao: confirmada 2026-10-24T18:06-03:00 — mensagem do Alex: "Sim"
+- teste_humano: pendente
+- verificacao_automatica: passou — 15 verificações da suíte T2.2 em Postgres 18.4 local, mais provas manuais: (1) 2 cargas seguidas → 5 linhas, 0 duplicatas, 2 registros; (2) recarga de agosto não altera julho (4 linhas / R$ 1.645,50 intactos); (3) falha no meio da transação reverte tudo; (4) conexão inválida não deixa registro preso em `em_andamento`; (5) linhas inválidas contadas por motivo com exemplos listados; (6) venda_liquida negativa preservada (troca 150 > venda 100 → -50,00); (7) volume real de 2026: 82.601 combinações em 3 meses, diferença 0,00 contra a fonte. Suítes T2.1c (32 verificações) e T3.1 seguem passando. Migration aplicada no Supabase.
+- aprendizado: pendente
+- ultima_acao: T2.2 implementada em 24/10/2026. Criados `supabase/migrations/20261024180000_t22_venda_mensal_e_carga.sql`, `contracts/carga_vendas.py` e `contracts/testes_t22.py`. Achado que mudou o código: o BI exporta valores com lixo de ponto flutuante (15.899999999999999 em vez de 15,90), o que gerava divergência de centavos por mês; corrigido com arredondamento a 2 casas na leitura.
+- proxima_acao: aguardar o teste humano do Alex
+- atualizado_em: 2026-10-24T18:40:00-03:00
+- observacao: a T2.2 foi provada contra um Postgres local, não contra o Supabase — o ambiente não tem a senha do banco. O que está provado é a lógica de transação e idempotência; o desempenho com as 888.756 linhas reais no Supabase do plano gratuito só a T2.3 (Ângelo) vai revelar. A carga exige `DATABASE_URL`; sem ela o script explica e sai com código 2, nunca em silêncio.
