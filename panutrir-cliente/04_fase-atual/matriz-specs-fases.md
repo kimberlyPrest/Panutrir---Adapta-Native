@@ -12,9 +12,9 @@ Legenda: ✔ concluída · ☐ a fazer · 🔒 bloqueada · ✖ cancelada. **Q**
 | — | T2.1 | Contratos e fixtures sintéticas | SPEC-1-002 | Dados | — | — | ✔ 16/09 |
 | — | T2.1b | Contratos × metodologia ago/26 | SPEC-1-002 | Dados | — | — | ✔ 02/10 |
 | — | T4.1 | Modelo do catálogo (reaproveitado com vínculo vigente único) | SPEC-1-004 | Dados | — | — | ✔ 01/10 |
-| A | T1.2 | Ciclo de meta (tabela/RPC), operações renomeadas, papéis reais | SPEC-1-001 | Léo | T1.1 | — | ☐ |
+| A | T1.2 | Ciclo de meta (tabela/RPC), operações renomeadas, papéis reais | SPEC-1-001 | Léo | T1.1 | — | 🔒 DÚVIDAS para a Kim (22/10) |
 | A | T1.3 | Remover senha fixa da migration, trocar a senha, contas por convite | SPEC-1-001 | Léo | — | — | ☐ |
-| A | T2.1c | Contrato `vendas` v2 contra as colunas reais; definir `venda_mensal` | SPEC-1-002 | Léo | T2.1b | — | ☐ |
+| A | T2.1c | Contrato `vendas` v2 contra as colunas reais; definir `venda_mensal` | SPEC-1-002 | Léo | T2.1b | — | ✔ 24/10 |
 | A | T3.1 | Parâmetros versionados + sortimento/substituição em tabela; versão Out/26 oficial | SPEC-1-003 | Léo | T2.1b | Q-10 | ☐ |
 | B | T1.4 | Provar negações por papel e repetição do ciclo | SPEC-1-001 | Ângelo | T1.2, T1.3 | — | ☐ |
 | B | T2.2 | Script de carga agregada mensal, idempotente, com registro | SPEC-1-002 | Léo | T2.1c | — | ☐ |
