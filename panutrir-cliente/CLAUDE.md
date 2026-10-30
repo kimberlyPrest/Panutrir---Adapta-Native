@@ -14,6 +14,9 @@ O sistema calcula a meta de Out/26 com dados reais pela metodologia oficial e re
 - Ordem e status das tasks: `04_fase-atual/matriz-specs-fases.md`.
 - Perguntas ao cliente: `03_documentos/perguntas-ao-cliente.md`.
 
+## Ritmo
+Tasks em sequência, sem pedir autorização nem teste entre elas. O teste do cliente é por SPEC: na Fase 1, só o login com contas convidadas (T1.3) e o aceite de Out/26 no painel (SPEC-1-007). Regra completa em `AGENTS.md`.
+
 ## Limites da Fase 1
 - Dados reais **permitidos** no Supabase do projeto. Nunca em repositório (os repositórios são públicos).
 - Sem aprovação/publicação, consulta pela equipe, cenários, logística ou IA.

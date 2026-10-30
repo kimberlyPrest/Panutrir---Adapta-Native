@@ -24,6 +24,10 @@ Paulo e Léo abrem o painel do ciclo Out/26, veem os controles da planilha lado 
 
 CA-1-01 a CA-1-25, detalhados nas SPECs. O bloqueante é **CA-1-21**: o teste de gabarito passa em G-01..G-18.
 
+## Teste do cliente
+
+Por SPEC, não por task. Na Fase 1 são dois testes: o login com contas convidadas (SPEC-1-001, na T1.3) e a demonstração de Out/26 ao Paulo (SPEC-1-007, aceite da fase). As SPECs 1-002 a 1-006 fecham pela prova automática contra a fonte e o gabarito. Regra completa em `AGENTS.md`.
+
 ## Tasks
 
 A ordem, as dependências e o status estão em `matriz-specs-fases.md` (fonte única). Resumo por leva:
@@ -55,6 +59,7 @@ Aprovação/publicação, consulta pela equipe, cenários, acompanhamento, logí
 
 ## Histórico
 
+- 30/10: teste do cliente passa a ser por SPEC (dois na fase: T1.3 e SPEC-1-007). As tasks de prova T1.4, T2.3, T4.3, T5.6 e T6.4 passam ao Léo, com prova automática.
 - 20/10: EMENDA 02 — fase reescrita (dados reais, metodologia Out/26, Cliente × SKU). Tasks T1.1, T2.1, T2.1b e T4.1 aproveitadas; as demais tasks antigas foram canceladas ou absorvidas (ver matriz). As DÚVIDAS de 02/10 (T1.2, T6.2, blocos 9–10, origem OFICIAL) foram resolvidas pela emenda.
 - 02/10: T2.1b concluída; T1.2 e T6.2 bloqueadas por dúvidas.
 - 01/10: T4.1 concluída; banco restaurado após pausa do Supabase.
