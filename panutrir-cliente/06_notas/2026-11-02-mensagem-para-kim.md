@@ -1,16 +1,18 @@
-# Mensagem para a Kim — 02/11/2026 (pronta para encaminhar)
+# Mensagem para a Kim — 02/11/2026 (pronta para encaminhar) — ATUALIZADA com o aceite da Fase 1
 
-**Como usar:** copiar o bloco abaixo e enviar à Kim (WhatsApp/e-mail). É a atualização de status + os 5 itens que precisam do ok dela. Não usa jargão técnico além do que ela já conhece do projeto.
+**Como usar:** copiar o bloco abaixo e enviar à Kim (WhatsApp/e-mail). É o aviso do aceite da Fase 1 (que libera a Fase 2) + os 5 itens que ainda precisam do ok dela. Não usa jargão técnico além do que ela já conhece do projeto.
 
 ---
 
-Kim, bom dia! Atualização do Adapta Native — Fase 1 está em **14/30 tasks (47%)**, com o GAP (o coração da SPEC-1-006) provado contra o gabarito de Out/26.
+Kim, bom dia! Duas notícias do Adapta Native.
 
-**O que foi entregue desde sexta:**
+**1. A Fase 1 foi ACEITA pelo cliente.** O Paulo testou o sistema de ponta a ponta (painel de controles, consulta até Cliente × SKU com a memória de cálculo e a exportação em Excel) e confirmou: "testei e pode seguir". Com isso a Fase 1 fecha em **28 de 30 tasks (93%)** e a Fase 2 fica liberada do lado do cliente — só aguardando o seu ok para começarmos.
 
-1. **T6.1 — GAP total e Indireto/Direto** ✅ provado: o canal Indireto do seu gabarito são 6 clientes com responsável especial (CANAL INDIRETO e CANAL INDIRETO BARUERI — a soma fecha exatamente nos R$ 435.375,28 do G-05). Com isso, a distribuição do GAP Direto reproduz os 16 supervisores da sua aba Meta Supervisor **no centavo**.
-2. **T6.2 — Mix de linha e convergência** ✅ provado: a regra de convergência dos Especiais (aproximar 50% da distância da média) reproduz as 123 linhas da sua aba Meta Promotor **no centavo**, e os totais por linha fecham exatos (Branca R$ 888.938,14 · Especiais R$ 409.258,13).
-3. **7 perguntas foram respondidas pelos dados e homologadas pelo Alex** (Q-12, Q-13, Q-14, Q-15, Q-17, Q-18, Q-19) — já estão registradas como respondidas no registro central, com a evidência de cada uma.
+**2. O que foi entregue desde sexta (resumo):**
+
+1. **T6.1 a T6.4 (GAP e distribuição)** ✅ provadas: o canal Indireto do seu gabarito são 6 clientes com responsável especial (a soma fecha exatamente nos R$ 435.375,28 do G-05); a descida do GAP até Cliente × SKU reproduz as 4.092 linhas da sua aba Meta Cliente Linha **no centavo**; e as consolidações fecham em todos os níveis (Cliente, Promotor, Supervisor e Empresa — R$ 13.000.000,00).
+2. **T7.1 a T7.5 (teste, painel, consulta e exportação)** ✅ entregues e **aceitas pelo cliente**: o teste automatizado bate 19/19 controles no modo Validação da Regra; o painel mostra cada controle ao lado do seu gabarito; a consulta explica cada número sem a planilha; e a exportação sai no layout das 4 abas do gabarito.
+3. **7 perguntas foram respondidas pelos dados e homologadas pelo Alex** (Q-12, Q-13, Q-14, Q-15, Q-17, Q-18, Q-19) — registradas no registro central com a evidência de cada uma.
 
 **O que precisa do seu ok agora (5 itens):**
 
@@ -22,7 +24,9 @@ Kim, bom dia! Atualização do Adapta Native — Fase 1 está em **14/30 tasks (
 
 **Fora da sua lista, só um lembrete:** o BI ainda não exportou as vendas de Outubro/26 — sem elas, o controle CA-1-12 (27 clientes sem estrutura em Out/26) fica sem prova.
 
-Nada disso trava o andamento: a T6.3 já pode começar com a leitura provável da Q-40. Mas com esses 5 oks, T5 e T6 fecham oficialmente e a Fase 1 entra na reta final (painel e exportação).
+Nada disso muda o que o cliente já aceitou — as regras estão implementadas com a leitura provável e documentadas no painel. Mas com esses 5 oks, a T5.1 e a T6.2 fecham oficialmente e a Fase 2 começa limpa.
+
+**Sobre a Fase 2:** pode liberar? O escopo planejado é o ciclo mensal operável (SPEC-2-001..004). Assim que você der o ok, começamos.
 
 ---
 
