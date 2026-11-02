@@ -1,6 +1,6 @@
 # Fase 1 — Motor de meta Cliente × SKU com dados reais
 
-**Estado:** ABERTA — reescrita pela EMENDA 02/2026 (20/10/2026)  
+**Estado:** ACEITA (02/11/2026, T7.5/CA-1-25) — reescrita pela EMENDA 02/2026 (20/10/2026)  
 **Janela indicativa:** 20/10 – 14/11/2026  
 **Objetivo:** o sistema calcula a meta de Out/26 com dados reais pela metodologia oficial e reproduz a planilha do Paulo: R$13.000.000,00 fechados, gabarito batendo e cada número explicado.
 
@@ -65,3 +65,4 @@ Aprovação/publicação, consulta pela equipe, cenários, acompanhamento, logí
 - 01/10: T4.1 concluída; banco restaurado após pausa do Supabase.
 - 23/09: EMENDA 01 (superada).
 - 16/09: T1.1 e T2.1 concluídas.
+- 02/11: **Fase 1 aceita pelo cliente** (T7.5/CA-1-25). Matriz em 28/30 ✔; pendências T1.3 e T5.1 carregadas. Próxima: Fase 2, aguardando a liberação da consultora.

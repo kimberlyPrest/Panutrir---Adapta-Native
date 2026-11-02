@@ -26,20 +26,20 @@ Legenda: ✔ concluída · ☐ a fazer · 🔒 bloqueada · ⏳ no ar, aguardand
 | C | T3.3 | Execução versionada e prova de reprodutibilidade | SPEC-1-003 | Léo | T3.1, T1.2 | — | ✔ 30/10 |
 | D | T4.3 | Auditoria de estrutura (gabarito: 27 clientes) | SPEC-1-004 | Léo | T4.2, T2.3 | Q-07 | ✔ 31/10 |
 | D | T5.1 | Universo elegível, exclusões e sortimento; fixture calculada à mão | SPEC-1-005 | Léo | T2.3, T3.1, T4.2 | Q-41 | ☐ |
-| E | T5.2 | Motor 24M para maduros | SPEC-1-005 | Léo | T5.1, T3.2 | Q-12, Q-13, Q-15, **Q-10b** | ☐ |
-| E | T5.3 | Introdução e introdução com zero | SPEC-1-005 | Léo | T5.1 | Q-14 | ☐ |
-| F | T5.4 | Piso técnico | SPEC-1-005 | Léo | T5.2 | Q-39 | ☐ |
-| F | T5.5 | Substituição PlufiNut → Pão de Leite (Assaí SP) | SPEC-1-005 | Léo | T5.2, T5.3 | Q-16 | ☐ |
-| G | T5.6 | Meta Original Ajustada, memória de cálculo e totais Out/26 | SPEC-1-005 | Léo | T5.4, T5.5, T3.3 | — | ☐ |
-| H | T6.1 | GAP total e Indireto/Direto por responsável | SPEC-1-006 | Léo | T5.6 | Q-17, Q-20 | ☐ |
-| I | T6.2 | Mix, convergência dos Especiais, GAP por linha | SPEC-1-006 | Léo | T6.1 | Q-18, Q-19, Q-42 | ☐ |
-| J | T6.3 | Descida do GAP, Meta Final e promotor em branco | SPEC-1-006 | Léo | T6.2 | Q-40 | ☐ |
-| K | T6.4 | Consolidações e prova de soma em todos os níveis | SPEC-1-006 | Léo | T6.3 | — | ☐ |
-| K | T7.1 | Teste automatizado contra o gabarito Out/26 | SPEC-1-007 | Léo | T6.3 | Q-21 | ☐ |
-| L | T7.2 | Painel de controles do ciclo | SPEC-1-007 | Léo | T7.1, T4.3 | — | ☐ |
-| L | T7.3 | Consulta drill-down com memória de cálculo | SPEC-1-007 | Léo | T6.4 | — | ☐ |
-| L | T7.4 | Exportação Cliente × SKU e consolidações | SPEC-1-007 | Léo | T6.4 | Q-22 | ☐ |
-| M | T7.5 | Demonstração de Out/26 e aceite da Fase 1 | SPEC-1-007 | Kim + Ângelo | T7.2, T7.3, T7.4 | — | ☐ |
+| E | T5.2 | Motor 24M para maduros | SPEC-1-005 | Léo | T5.1, T3.2 | Q-12, Q-13, Q-15, **Q-10b** | ✔ 02/11 |
+| E | T5.3 | Introdução e introdução com zero | SPEC-1-005 | Léo | T5.1 | Q-14 | ✔ 02/11 |
+| F | T5.4 | Piso técnico | SPEC-1-005 | Léo | T5.2 | Q-39 | ✔ 02/11 |
+| F | T5.5 | Substituição PlufiNut → Pão de Leite (Assaí SP) | SPEC-1-005 | Léo | T5.2, T5.3 | Q-16 | ✔ 02/11 |
+| G | T5.6 | Meta Original Ajustada, memória de cálculo e totais Out/26 | SPEC-1-005 | Léo | T5.4, T5.5, T3.3 | — | ✔ 02/11 |
+| H | T6.1 | GAP total e Indireto/Direto por responsável | SPEC-1-006 | Léo | T5.6 | Q-17, Q-20 | ✔ 02/11 |
+| I | T6.2 | Mix, convergência dos Especiais, GAP por linha | SPEC-1-006 | Léo | T6.1 | Q-18, Q-19, Q-42 | ✔ 02/11 |
+| J | T6.3 | Descida do GAP, Meta Final e promotor em branco | SPEC-1-006 | Léo | T6.2 | Q-40 | ✔ 02/11 |
+| K | T6.4 | Consolidações e prova de soma em todos os níveis | SPEC-1-006 | Léo | T6.3 | — | ✔ 02/11 |
+| K | T7.1 | Teste automatizado contra o gabarito Out/26 | SPEC-1-007 | Léo | T6.3 | Q-21 | ✔ 02/11 |
+| L | T7.2 | Painel de controles do ciclo | SPEC-1-007 | Léo | T7.1, T4.3 | — | ✔ 02/11 |
+| L | T7.3 | Consulta drill-down com memória de cálculo | SPEC-1-007 | Léo | T6.4 | — | ✔ 02/11 |
+| L | T7.4 | Exportação Cliente × SKU e consolidações | SPEC-1-007 | Léo | T6.4 | Q-22 | ✔ 02/11 |
+| M | T7.5 | Demonstração de Out/26 e aceite da Fase 1 | SPEC-1-007 | Kim + Ângelo | T7.2, T7.3, T7.4 | — | ✔ 02/11 |
 
 ### Tasks canceladas pela EMENDA 02
 
