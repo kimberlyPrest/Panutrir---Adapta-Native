@@ -59,8 +59,8 @@ Uma intranet modular no mesmo Supabase:
 | RF-18 | Edição de parâmetros e regras pela interface | 2 | SPEC-2-002 |
 | RF-19 | Simulação e comparação de cenários | 2 | SPEC-2-003 |
 | RF-20 | Aprovação e publicação com versão imutável | 2 | SPEC-2-004 |
-| RF-21 | Consulta por perfil (supervisor, promotor, Diretoria) | 2 | SPEC-2-004 |
-| RF-22 | Entrega ao Metabase e medição do prazo (K2) | 2 | SPEC-2-004 |
+| RF-21 | Consulta por perfil (supervisor, promotor, Diretoria) | 2 | SPEC-2-005 |
+| RF-22 | Entrega ao Metabase e medição do prazo (K2) | 2 | SPEC-2-006 (entrega); SPEC-2-004 (K2) |
 | RF-23 | Realizado × meta com projeção de fechamento | 3 | SPEC-3-001 |
 | RF-24 | Indicadores de trocas e visitas | 3 | SPEC-3-002 |
 | RF-25 | Diagnósticos gerenciais (piso por promotor, REVISAR, Key Accounts) | 3 | SPEC-3-003 |
