@@ -4,10 +4,10 @@
 **Consultora:** Kim · **CSM:** Matheus  
 **Dono do projeto:** Paulo · **Implementação:** Léo · **Champion operacional:** Ângelo  
 **Arquitetura:** Supabase + front React no Skip  
-**Fase ativa:** 1 — Motor de meta Cliente × SKU com dados reais (EMENDA 02/2026)
+**Fase atual:** 2 — Ciclo mensal operável (EMENDA 02/2026); **execução não liberada**. A Fase 1 está em `05_entregas/fase-1/`
 
 ## Resultado esperado da fase
-O sistema calcula a meta de Out/26 com dados reais pela metodologia oficial e reproduz a planilha do Paulo: R$13.000.000,00 fechados, gabarito batendo, cada número explicado.
+O ciclo do mês acontece dentro do sistema: Nov/26 roda em paralelo com a planilha do Paulo e é reconciliado; Dez/26 é aprovado, publicado e consultado pela equipe sem a planilha.
 
 ## Fonte da verdade
 - Cálculo: `06_notas/2026-10-20-metodologia-oficial-out-2026.md` (regras M-xx, gabarito G-xx, parâmetros P-xx).
@@ -15,9 +15,10 @@ O sistema calcula a meta de Out/26 com dados reais pela metodologia oficial e re
 - Perguntas ao cliente: `03_documentos/perguntas-ao-cliente.md`.
 
 ## Ritmo
-Tasks em sequência, sem pedir autorização nem teste entre elas. O teste do cliente é por SPEC: na Fase 1, só o login com contas convidadas (T1.3) e o aceite de Out/26 no painel (SPEC-1-007). Regra completa em `AGENTS.md`.
+Tasks em sequência, sem pedir autorização nem teste entre elas. O teste do cliente é por SPEC: na Fase 2 são seis, um por SPEC, listados em `04_fase-atual/fase.md` (`## Teste do cliente`). Regra completa em `AGENTS.md`.
 
-## Limites da Fase 1
-- Dados reais **permitidos** no Supabase do projeto. Nunca em repositório (os repositórios são públicos).
-- Sem aprovação/publicação, consulta pela equipe, cenários, logística ou IA.
+## Limites da Fase 2
+- Dados reais **permitidos** no Supabase do projeto. Nunca em repositório.
+- **Execução depende de liberação expressa da consultora**; a fase consome as pendências da Fase 1 (T1.3, T5.1/CA-1-13) e as decisões D1/D2/D3 como bloqueios declarados, sem presumir resposta.
 - A EMENDA 01 (ago/26) está superada; não usar `2026-09-23-metodologia-oficial-ago-2026.md`.
+- A documentação da Fase 1 fica em `05_entregas/fase-1/` (histórico; não é fonte de status).
