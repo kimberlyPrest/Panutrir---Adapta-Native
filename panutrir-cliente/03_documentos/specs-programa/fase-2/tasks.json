@@ -1,0 +1,543 @@
+{
+  "fase": 2,
+  "cliente": "Panutrir",
+  "gerada_em": "2026-11-03",
+  "natureza": "documentação publicada por autorização da Kim em 04/11/2026; execução não liberada",
+  "specs": [
+    "SPEC-2-001",
+    "SPEC-2-002",
+    "SPEC-2-003",
+    "SPEC-2-004",
+    "SPEC-2-005",
+    "SPEC-2-006"
+  ],
+  "tasks": [
+    {
+      "id": "T2.1.1",
+      "task": "Derivar as janelas do ciclo do mês de referência (elegibilidade T−3, motor T−24, mix T−6 e idade do SKU em meses) e gravá-las no registro do ciclo",
+      "dono": "Léo",
+      "spec": "SPEC-2-001",
+      "criteria": "CA-2-01",
+      "cas": [
+        "CA-2-01"
+      ],
+      "recorte": "RED 'motor com Jul–Set/26 fixo' → GREEN com dois ciclos (2026-11 e 2026-12)",
+      "evidencia": "relatório com as 4 janelas dos dois ciclos + busca sem mês literal no caminho do cálculo",
+      "pre": [
+        "Fase 1 aceita (02/11/2026)"
+      ],
+      "q": [],
+      "leva": "A",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.2.1",
+      "task": "Entregar a tela de parâmetros versionados (P-01..P-18) com criação de versão e autor e motivo obrigatórios, aceitando valor PENDENTE explícito",
+      "dono": "Léo",
+      "spec": "SPEC-2-002",
+      "criteria": "CA-2-06",
+      "cas": [
+        "CA-2-06"
+      ],
+      "recorte": "GREEN 'editar P-02 pela tela cria versão nova com autor e motivo' + RED 'UPDATE direto na versão é recusado'",
+      "evidencia": "captura da tela + registro de versão com autor, motivo e os campos marcados PENDENTE",
+      "pre": [
+        "Fase 1 aceita (02/11/2026)"
+      ],
+      "q": [
+        "Q-20"
+      ],
+      "leva": "A",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.4.1",
+      "task": "Apurar a reconciliação por modo (VALIDAÇÃO DA REGRA e EXECUÇÃO) e exigir, em cada divergência, causa declarada, dono e referência da pendência que a resolve",
+      "dono": "Léo",
+      "spec": "SPEC-2-004",
+      "criteria": "CA-2-16, CA-2-19",
+      "cas": [
+        "CA-2-16",
+        "CA-2-19"
+      ],
+      "recorte": "RED 'execução 15/19 aprovada porque a regra dá 19/19' → GREEN 'modo EXECUÇÃO não reconciliado bloqueia'",
+      "evidencia": "tabela dos dois modos por ciclo + bloqueio provado + causa, dono e referência em cada divergência",
+      "pre": [
+        "Fase 1 aceita (02/11/2026)"
+      ],
+      "q": [
+        "Q-20"
+      ],
+      "leva": "A",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.5.1",
+      "task": "Criar os papéis de consulta e o vínculo usuário→carteira por papel (supervisor, promotor, diretoria), sem inferir vínculo por código ambíguo entre papéis",
+      "dono": "Léo",
+      "spec": "SPEC-2-005",
+      "criteria": "CA-2-23",
+      "cas": [
+        "CA-2-23"
+      ],
+      "recorte": "RED 'usuário sem vínculo lê a empresa inteira' → GREEN 'sem vínculo não lê nada (fail-closed)'",
+      "evidencia": "tabela de vínculos + fixture sintética com 2 supervisores, 2 promotores, 1 diretoria e 1 sem vínculo",
+      "pre": [
+        "Fase 1 aceita (02/11/2026)"
+      ],
+      "q": [],
+      "leva": "A",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.6.1",
+      "task": "Extrair a meta publicada numa consulta de saída com o layout lido de parâmetro (P-18), recusando layout fixo no código",
+      "dono": "Léo",
+      "spec": "SPEC-2-006",
+      "criteria": "CA-2-28, CA-2-31",
+      "cas": [
+        "CA-2-28",
+        "CA-2-31"
+      ],
+      "recorte": "RED 'layout fixo no código, troca exige deploy' → GREEN 'layout lido da versão, com PENDENTE declarado'",
+      "evidencia": "consulta de saída + fixture sintética nos layouts A e B, sem nenhum dado real",
+      "pre": [
+        "Fase 1 aceita (02/11/2026)"
+      ],
+      "q": [
+        "Q-22"
+      ],
+      "leva": "A",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.1.2",
+      "task": "Herdar a versão de parâmetros do ciclo anterior gravando Meta Diretoria, IS, dias úteis e G como requer_confirmação e forçar não reconciliada a execução que usar parâmetro não confirmado",
+      "dono": "Léo",
+      "spec": "SPEC-2-001",
+      "criteria": "CA-2-05",
+      "cas": [
+        "CA-2-05"
+      ],
+      "recorte": "RED 'G herdado de Out/26 executa como reconciliado' → GREEN 'parâmetro não confirmado impede reconciliar'",
+      "evidencia": "versão 2026-11 com os 4 campos marcados + execução saindo não reconciliada com a lista de pendências",
+      "pre": [
+        "T2.1.1"
+      ],
+      "q": [
+        "Q-10b"
+      ],
+      "leva": "B",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.1.3",
+      "task": "Construir a rotina operacional de carga mensal sem SQL, com registro e idempotência por mês; entregar fluxo para operação do Ângelo",
+      "dono": "Léo",
+      "spec": "SPEC-2-001",
+      "criteria": "CA-2-02",
+      "cas": [
+        "CA-2-02"
+      ],
+      "recorte": "GREEN 'carregar um mês pelo fluxo operacional' + REGRESSÃO 'recarregar o mesmo mês não duplica nem altera os outros'",
+      "evidencia": "fluxo implementado e prova automática de carga/reenvio sem duplicação; operação do Ângelo validada no teste humano da SPEC",
+      "pre": [
+        "Fase 1 aceita (02/11/2026)"
+      ],
+      "q": [],
+      "leva": "B",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.1.4",
+      "task": "Provar que o ciclo 2026-10 aceito continua idêntico depois da derivação das janelas, comparando insumos e totais por regime",
+      "dono": "Léo",
+      "spec": "SPEC-2-001",
+      "criteria": "CA-2-04",
+      "cas": [
+        "CA-2-04"
+      ],
+      "recorte": "REGRESSÃO 'reexecutar 2026-10 e comparar com o estado aceito em 02/11'",
+      "evidencia": "hash da execução aceita × hash da reexecução + totais por regime lado a lado, diferença zero",
+      "pre": [
+        "T2.1.1"
+      ],
+      "q": [],
+      "leva": "B",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.2.2",
+      "task": "Mostrar o diff campo a campo entre duas versões de parâmetros e quais execuções usaram cada versão",
+      "dono": "Léo",
+      "spec": "SPEC-2-002",
+      "criteria": "CA-2-09",
+      "cas": [
+        "CA-2-09"
+      ],
+      "recorte": "GREEN 'comparar duas versões existentes' + REGRESSÃO 'execução aponta a versão que a gerou'",
+      "evidencia": "captura do diff + consulta execução → versão com o mesmo resultado",
+      "pre": [
+        "T2.2.1"
+      ],
+      "q": [],
+      "leva": "B",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.2.3",
+      "task": "Dar vigência por ciclo às regras por rede (sortimento restrito, substituição e exclusões) e recusar vigência retroativa",
+      "dono": "Léo",
+      "spec": "SPEC-2-002",
+      "criteria": "CA-2-07",
+      "cas": [
+        "CA-2-07"
+      ],
+      "recorte": "RED 'regra nova muda o resultado do ciclo anterior' → GREEN 'vale só no ciclo de vigência'",
+      "evidencia": "dois ciclos com regras diferentes + resultado de cada um antes e depois da regra nova",
+      "pre": [
+        "Fase 1 aceita (02/11/2026)"
+      ],
+      "q": [],
+      "leva": "B",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.3.1",
+      "task": "Criar execução de cenário a partir de versão derivada marcada simulacao, sem tocar a execução oficial",
+      "dono": "Léo",
+      "spec": "SPEC-2-003",
+      "criteria": "CA-2-11",
+      "cas": [
+        "CA-2-11"
+      ],
+      "recorte": "RED 'cenário sobrescreve o resultado oficial' → GREEN 'hash do oficial idêntico antes e depois'",
+      "evidencia": "hash do oficial antes e depois + execução de cenário separada e marcada como simulacao",
+      "pre": [
+        "Fase 1 aceita (02/11/2026)"
+      ],
+      "q": [],
+      "leva": "B",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.4.2",
+      "task": "Executar aprovar e publicar com trilha append-only (ator, operação, alvo, motivo, timestamp UTC) e recusa auditada",
+      "dono": "Léo",
+      "spec": "SPEC-2-004",
+      "criteria": "CA-2-17",
+      "cas": [
+        "CA-2-17"
+      ],
+      "recorte": "GREEN 'aprovar execução reconciliada no modo EXECUÇÃO e publicar' + Falha 'aprovar execução não reconciliada'",
+      "evidencia": "trilha de aprovação e publicação + duas negativas auditadas",
+      "pre": [
+        "T2.4.1"
+      ],
+      "q": [],
+      "leva": "B",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.5.2",
+      "task": "Entregar a consulta por perfil: supervisor vê a própria equipe, promotor a própria carteira e Diretoria a empresa",
+      "dono": "Léo",
+      "spec": "SPEC-2-005",
+      "criteria": "CA-2-24",
+      "cas": [
+        "CA-2-24"
+      ],
+      "recorte": "GREEN '2 supervisores e 2 promotores consultando' + 'Diretoria vê o total da empresa'",
+      "evidencia": "capturas por perfil + conferência de que nenhum perfil alcança carteira alheia",
+      "pre": [
+        "T2.5.1"
+      ],
+      "q": [],
+      "leva": "B",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.6.2",
+      "task": "Refrescar a meta publicada para o Metabase de forma idempotente e conferir no destino o total publicado",
+      "dono": "Léo",
+      "spec": "SPEC-2-006",
+      "criteria": "CA-2-29",
+      "cas": [
+        "CA-2-29"
+      ],
+      "recorte": "GREEN 'dois refreshes seguidos dão o mesmo total' + REGRESSÃO 'total no destino igual ao publicado'",
+      "evidencia": "comparação destino × publicado com diferença zero + registro de cada refresh",
+      "pre": [
+        "T2.6.1",
+        "Q-22 respondida; acesso e autorização do destino Metabase verificados"
+      ],
+      "q": [
+        "Q-22"
+      ],
+      "leva": "B",
+      "status": "bloqueada"
+    },
+    {
+      "id": "T2.2.4",
+      "task": "Bloquear criação de versão em ciclo aprovado ou publicado e recusar oficializar versão com parâmetro pendente, auditando as duas negativas",
+      "dono": "Léo",
+      "spec": "SPEC-2-002",
+      "criteria": "CA-2-08, CA-2-10",
+      "cas": [
+        "CA-2-08",
+        "CA-2-10"
+      ],
+      "recorte": "Falha 'criar versão em ciclo publicado' e 'oficializar com P-16 pendente' → duas negações auditadas",
+      "evidencia": "log das 2 negações + versão anterior intacta e ainda utilizável",
+      "pre": [
+        "T2.2.1"
+      ],
+      "q": [
+        "Q-20"
+      ],
+      "leva": "C",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.3.2",
+      "task": "Aplicar o limite de cenários por ciclo (P-17) com recusa auditada ao exceder e alerta registrado enquanto o valor estiver pendente",
+      "dono": "Léo",
+      "spec": "SPEC-2-003",
+      "criteria": "CA-2-14",
+      "cas": [
+        "CA-2-14"
+      ],
+      "recorte": "Falha 'criar o cenário N+1 com P-17 definido' → recusa auditada; com P-17 pendente → alerta e uso acumulado",
+      "evidencia": "log da recusa + contagem de cenários do ciclo + alerta registrado no caso pendente",
+      "pre": [
+        "T2.3.1"
+      ],
+      "q": [
+        "Q-20"
+      ],
+      "leva": "C",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.3.3",
+      "task": "Comparar dois cenários por canal, supervisor e linha, com diferença absoluta e percentual, somas fechando e o parâmetro causador identificado",
+      "dono": "Léo",
+      "spec": "SPEC-2-003",
+      "criteria": "CA-2-12, CA-2-15",
+      "cas": [
+        "CA-2-12",
+        "CA-2-15"
+      ],
+      "recorte": "GREEN 'comparação com somas por nível' + REGRESSÃO 'soma dos filhos igual ao pai em cada nível'",
+      "evidencia": "tela da comparação com as somas conferidas em cada nível e o parâmetro apontado por diferença",
+      "pre": [
+        "T2.3.1"
+      ],
+      "q": [],
+      "leva": "C",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.4.3",
+      "task": "Congelar a publicação e obrigar a correção por nova execução publicada como versão 2 com motivo, preservando a versão 1 consultável",
+      "dono": "Léo",
+      "spec": "SPEC-2-004",
+      "criteria": "CA-2-18",
+      "cas": [
+        "CA-2-18"
+      ],
+      "recorte": "RED 'UPDATE direto na meta publicada' → GREEN 'negado; versão 2 com motivo e v1 preservada'",
+      "evidencia": "negativa do UPDATE + versão 2 publicada com motivo + versão 1 ainda consultável",
+      "pre": [
+        "T2.4.2"
+      ],
+      "q": [],
+      "leva": "C",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.5.3",
+      "task": "Aplicar RLS por carteira nas tabelas de resultado e provar a negativa em três frentes: consulta pela interface, RPC e acesso direto à tabela",
+      "dono": "Léo",
+      "spec": "SPEC-2-005",
+      "criteria": "CA-2-25",
+      "cas": [
+        "CA-2-25"
+      ],
+      "recorte": "Falha 'promotor acessando carteira alheia pelas 3 frentes' → negado nas 3 e auditado",
+      "evidencia": "matriz de 5 perfis × 3 frentes com resultado e auditoria da negação",
+      "pre": [
+        "T2.5.1",
+        "T2.5.2"
+      ],
+      "q": [],
+      "leva": "C",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.5.4",
+      "task": "Fazer a consulta exibir somente a meta publicada, com o ciclo declarado e a memória de cálculo disponível",
+      "dono": "Léo",
+      "spec": "SPEC-2-005",
+      "criteria": "CA-2-26",
+      "cas": [
+        "CA-2-26"
+      ],
+      "recorte": "RED 'consulta mostra execução em rascunho e cenário' → GREEN 'só a publicada, com ciclo e memória'",
+      "evidencia": "capturas antes e depois + conferência do ciclo declarado e da memória de cálculo",
+      "pre": [
+        "T2.4.2",
+        "T2.5.2"
+      ],
+      "q": [],
+      "leva": "C",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.6.3",
+      "task": "Restringir o extrato à meta publicada, incluir o campo de perfil necessário à permissão no destino e registrar a responsabilidade do cliente pela configuração do Metabase",
+      "dono": "Léo",
+      "spec": "SPEC-2-006",
+      "criteria": "CA-2-30",
+      "cas": [
+        "CA-2-30"
+      ],
+      "recorte": "RED 'rascunho e cenário aparecem no extrato' → GREEN 'só publicado, com campo de perfil'",
+      "evidencia": "extrato conferido coluna a coluna + nota de responsabilidade assinada pelo cliente",
+      "pre": [
+        "T2.6.2"
+      ],
+      "q": [
+        "Q-22"
+      ],
+      "leva": "C",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.1.5",
+      "task": "Rodar Nov/26 pelo sistema e pelo processo atual do Paulo e reconciliar as diferenças uma a uma até o aceite",
+      "dono": "Ângelo",
+      "spec": "SPEC-2-001",
+      "criteria": "CA-2-03",
+      "cas": [
+        "CA-2-03"
+      ],
+      "recorte": "GREEN 'Nov/26 dos dois processos' + REGRESSÃO 'nenhuma diferença sem causa declarada'",
+      "evidencia": "parecer de reconciliação item a item + aceite do Paulo registrado",
+      "pre": [
+        "T2.1.2",
+        "T2.1.3",
+        "T2.4.2",
+        "D1, D2, D3 e Q-42 respondidas"
+      ],
+      "q": [
+        "D1",
+        "D2",
+        "D3",
+        "Q-42",
+        "Q-20",
+        "Q-21"
+      ],
+      "leva": "D",
+      "status": "bloqueada"
+    },
+    {
+      "id": "T2.3.4",
+      "task": "Promover um cenário a candidato oficial registrando autor, motivo e versão derivada, sem publicar",
+      "dono": "Léo",
+      "spec": "SPEC-2-003",
+      "criteria": "CA-2-13",
+      "cas": [
+        "CA-2-13"
+      ],
+      "recorte": "RED 'promoção sem motivo' → GREEN 'exige autor e motivo e não publica'",
+      "evidencia": "trilha da promoção + estado do ciclo antes e depois, sem publicação",
+      "pre": [
+        "T2.3.3"
+      ],
+      "q": [],
+      "leva": "D",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.4.4",
+      "task": "Registrar os quatro marcos do ciclo (mês fechado carregado, execução, aprovação e publicação) com timestamp UTC e calcular o prazo do K2",
+      "dono": "Léo",
+      "spec": "SPEC-2-004",
+      "criteria": "CA-2-20",
+      "cas": [
+        "CA-2-20"
+      ],
+      "recorte": "GREEN 'prazo calculado a partir dos 4 marcos' + REGRESSÃO 'marco ausente não vira zero'",
+      "evidencia": "relatório de tempos do ciclo + cálculo do prazo conferido à mão",
+      "pre": [
+        "T2.4.2"
+      ],
+      "q": [],
+      "leva": "D",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.4.5",
+      "task": "Recusar ajuste manual do número final em qualquer nível e exigir que a exceção entre por regra ou por parâmetro versionado",
+      "dono": "Léo",
+      "spec": "SPEC-2-004",
+      "criteria": "CA-2-22",
+      "cas": [
+        "CA-2-22"
+      ],
+      "recorte": "Falha 'editar a Meta Final de um Cliente × SKU direto na tabela' → negado; a mesma mudança por parâmetro é aceita no ciclo seguinte",
+      "evidencia": "log da negativa + prova de que a via por parâmetro produz o efeito esperado no ciclo seguinte",
+      "pre": [
+        "T2.4.2"
+      ],
+      "q": [],
+      "leva": "D",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.4.6",
+      "task": "Publicar o ciclo Dez/26 antes do primeiro dia de dezembro e medir o prazo do K2 no ciclo real",
+      "dono": "Ângelo",
+      "spec": "SPEC-2-004",
+      "criteria": "CA-2-21",
+      "cas": [
+        "CA-2-21"
+      ],
+      "recorte": "GREEN 'publicação de Dez/26 antes de 01/12' + REGRESSÃO 'prazo do K2 medido e comparável ao baseline de até o dia 5'",
+      "evidencia": "registro da publicação com data e hora + medição do prazo do ciclo",
+      "pre": [
+        "T2.1.5",
+        "T2.4.4",
+        "T2.4.5",
+        "T2.6.2",
+        "T2.5.4"
+      ],
+      "q": [
+        "Q-22"
+      ],
+      "leva": "E",
+      "status": "planejada"
+    },
+    {
+      "id": "T2.5.5",
+      "task": "Provar o isolamento real com contas convidadas (2 supervisores, 2 promotores e diretoria) e nenhuma credencial exposta em tela, front, migration ou endpoint",
+      "dono": "Léo",
+      "spec": "SPEC-2-005",
+      "criteria": "CA-2-27",
+      "cas": [
+        "CA-2-27"
+      ],
+      "recorte": "Falha 'login com credencial preenchida, endpoint de troca de senha acessível e conta compartilhada' → negado nas 3 frentes",
+      "evidencia": "captura do login sem credencial + resposta do endpoint removido + 5 contas convidadas entrando com senha própria",
+      "pre": [
+        "T2.5.3",
+        "Gate G-SEG satisfeito",
+        "Convites e privatização dos repositórios concluídos pelo cliente"
+      ],
+      "q": [],
+      "leva": "E",
+      "status": "bloqueada"
+    }
+  ]
+}
