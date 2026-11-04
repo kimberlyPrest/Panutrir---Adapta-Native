@@ -1,8 +1,8 @@
 {
   "fase": 2,
-  "cliente": "Nutri e Equilíbrio Panificação LTDA (Panutrir)",
-  "gerada_em": "2026-11-04",
-  "natureza": "planejamento documental; execução não liberada pela consultora",
+  "cliente": "Panutrir",
+  "gerada_em": "2026-11-03",
+  "natureza": "documentação publicada por autorização da Kim em 04/11/2026; execução não liberada",
   "specs": [
     "SPEC-2-001",
     "SPEC-2-002",
@@ -44,7 +44,9 @@
       "pre": [
         "Fase 1 aceita (02/11/2026)"
       ],
-      "q": [],
+      "q": [
+        "Q-20"
+      ],
       "leva": "A",
       "status": "planejada"
     },
@@ -58,12 +60,14 @@
         "CA-2-16",
         "CA-2-19"
       ],
-      "recorte": "GREEN 'relatório por modo com 19 controles e 2 modos medidos' + RED 'divergência sem causa declarada não fecha a reconciliação'",
-      "evidencia": "relatório dos 19 controles nos dois modos, com causa, dono e pendência por divergência",
+      "recorte": "RED 'execução 15/19 aprovada porque a regra dá 19/19' → GREEN 'modo EXECUÇÃO não reconciliado bloqueia'",
+      "evidencia": "tabela dos dois modos por ciclo + bloqueio provado + causa, dono e referência em cada divergência",
       "pre": [
         "Fase 1 aceita (02/11/2026)"
       ],
-      "q": [],
+      "q": [
+        "Q-20"
+      ],
       "leva": "A",
       "status": "planejada"
     },
@@ -76,8 +80,8 @@
       "cas": [
         "CA-2-23"
       ],
-      "recorte": "RED 'usuário com código 167 nos dois papéis recebe as duas carteiras' → GREEN recusa e registra o caso ambíguo",
-      "evidencia": "tabela de vínculos por papel + lista de códigos ambíguos recusados",
+      "recorte": "RED 'usuário sem vínculo lê a empresa inteira' → GREEN 'sem vínculo não lê nada (fail-closed)'",
+      "evidencia": "tabela de vínculos + fixture sintética com 2 supervisores, 2 promotores, 1 diretoria e 1 sem vínculo",
       "pre": [
         "Fase 1 aceita (02/11/2026)"
       ],
@@ -90,13 +94,13 @@
       "task": "Extrair a meta publicada numa consulta de saída com o layout lido de parâmetro (P-18), recusando layout fixo no código",
       "dono": "Léo",
       "spec": "SPEC-2-006",
-      "criteria": "CA-2-28",
+      "criteria": "CA-2-28, CA-2-31",
       "cas": [
         "CA-2-28",
         "CA-2-31"
       ],
-      "recorte": "GREEN 'extrato com o layout do P-18' + RED 'layout fixo no código é recusado'",
-      "evidencia": "extrato de um ciclo sintético + teste que troca o P-18 e vê o layout mudar",
+      "recorte": "RED 'layout fixo no código, troca exige deploy' → GREEN 'layout lido da versão, com PENDENTE declarado'",
+      "evidencia": "consulta de saída + fixture sintética nos layouts A e B, sem nenhum dado real",
       "pre": [
         "Fase 1 aceita (02/11/2026)"
       ],
@@ -115,12 +119,14 @@
       "cas": [
         "CA-2-05"
       ],
-      "recorte": "RED 'execução com IS herdado não confirmado fecha reconciliada' → GREEN fica não reconciliada até a confirmação",
-      "evidencia": "registro da versão herdada com os campos requer_confirmação + execução marcada não reconciliada antes da confirmação",
+      "recorte": "RED 'G herdado de Out/26 executa como reconciliado' → GREEN 'parâmetro não confirmado impede reconciliar'",
+      "evidencia": "versão 2026-11 com os 4 campos marcados + execução saindo não reconciliada com a lista de pendências",
       "pre": [
         "T2.1.1"
       ],
-      "q": [],
+      "q": [
+        "Q-10b"
+      ],
       "leva": "B",
       "status": "planejada"
     },
@@ -133,8 +139,8 @@
       "cas": [
         "CA-2-02"
       ],
-      "recorte": "GREEN 'Ângelo recarrega o mês pela tela e o registro aparece' + RED 'recarga do mesmo mês duplica linhas'",
-      "evidencia": "registro de carga criado pela tela + recarga do mesmo mês sem duplicar",
+      "recorte": "GREEN 'carregar um mês pelo fluxo operacional' + REGRESSÃO 'recarregar o mesmo mês não duplica nem altera os outros'",
+      "evidencia": "fluxo implementado e prova automática de carga/reenvio sem duplicação; operação do Ângelo validada no teste humano da SPEC",
       "pre": [
         "Fase 1 aceita (02/11/2026)"
       ],
@@ -151,8 +157,8 @@
       "cas": [
         "CA-2-04"
       ],
-      "recorte": "GREEN 'ciclo 2026-10 recalculado com hash igual ao aceito' + RED 'janela derivada muda um total do ciclo aceito'",
-      "evidencia": "hash da execução do ciclo 2026-10 antes e depois + tabela de totais por regime sem diferença",
+      "recorte": "REGRESSÃO 'reexecutar 2026-10 e comparar com o estado aceito em 02/11'",
+      "evidencia": "hash da execução aceita × hash da reexecução + totais por regime lado a lado, diferença zero",
       "pre": [
         "T2.1.1"
       ],
@@ -169,8 +175,8 @@
       "cas": [
         "CA-2-09"
       ],
-      "recorte": "GREEN 'diff mostra P-02 de 1,0319 para 1,0400 e a execução que usou cada versão' + RED 'diff omite campo alterado'",
-      "evidencia": "tela de diff com os campos alterados e as execuções vinculadas a cada versão",
+      "recorte": "GREEN 'comparar duas versões existentes' + REGRESSÃO 'execução aponta a versão que a gerou'",
+      "evidencia": "captura do diff + consulta execução → versão com o mesmo resultado",
       "pre": [
         "T2.2.1"
       ],
@@ -187,8 +193,8 @@
       "cas": [
         "CA-2-07"
       ],
-      "recorte": "GREEN 'regra cadastrada vale do ciclo informado em diante' + RED 'regra com vigência retroativa é recusada e auditada'",
-      "evidencia": "regra com ciclo de início + recusa auditada da vigência retroativa",
+      "recorte": "RED 'regra nova muda o resultado do ciclo anterior' → GREEN 'vale só no ciclo de vigência'",
+      "evidencia": "dois ciclos com regras diferentes + resultado de cada um antes e depois da regra nova",
       "pre": [
         "Fase 1 aceita (02/11/2026)"
       ],
@@ -205,8 +211,8 @@
       "cas": [
         "CA-2-11"
       ],
-      "recorte": "GREEN 'cenário grava execução com marcador simulacao e a oficial fica intacta' + RED 'cenário altera a execução oficial'",
-      "evidencia": "execução de cenário marcada simulacao + hash da execução oficial inalterado",
+      "recorte": "RED 'cenário sobrescreve o resultado oficial' → GREEN 'hash do oficial idêntico antes e depois'",
+      "evidencia": "hash do oficial antes e depois + execução de cenário separada e marcada como simulacao",
       "pre": [
         "Fase 1 aceita (02/11/2026)"
       ],
@@ -223,8 +229,8 @@
       "cas": [
         "CA-2-17"
       ],
-      "recorte": "GREEN 'aprovar e publicar gravam trilha com ator e motivo' + RED 'UPDATE na trilha é recusado'",
-      "evidencia": "trilha de aprovação e publicação + negativa de alteração da trilha",
+      "recorte": "GREEN 'aprovar execução reconciliada no modo EXECUÇÃO e publicar' + Falha 'aprovar execução não reconciliada'",
+      "evidencia": "trilha de aprovação e publicação + duas negativas auditadas",
       "pre": [
         "T2.4.1"
       ],
@@ -241,8 +247,8 @@
       "cas": [
         "CA-2-24"
       ],
-      "recorte": "GREEN 'supervisor vê só a própria equipe e diretoria vê a empresa' + RED 'supervisor vê a equipe de outro'",
-      "evidencia": "captura por perfil + lista de quem vê o quê por consulta",
+      "recorte": "GREEN '2 supervisores e 2 promotores consultando' + 'Diretoria vê o total da empresa'",
+      "evidencia": "capturas por perfil + conferência de que nenhum perfil alcança carteira alheia",
       "pre": [
         "T2.5.1"
       ],
@@ -259,12 +265,11 @@
       "cas": [
         "CA-2-29"
       ],
-      "recorte": "GREEN 'refresh idempotente e total do destino igual ao publicado' + RED 'refresh duplica linhas no destino'",
-      "evidencia": "dois refresh seguidos sem duplicar + total conferido no destino",
+      "recorte": "GREEN 'dois refreshes seguidos dão o mesmo total' + REGRESSÃO 'total no destino igual ao publicado'",
+      "evidencia": "comparação destino × publicado com diferença zero + registro de cada refresh",
       "pre": [
         "T2.6.1",
-        "Q-22 respondida",
-        "acesso e autorização do destino Metabase verificados"
+        "Q-22 respondida; acesso e autorização do destino Metabase verificados"
       ],
       "q": [
         "Q-22"
@@ -282,12 +287,14 @@
         "CA-2-08",
         "CA-2-10"
       ],
-      "recorte": "RED 'versão criada em ciclo publicado' → GREEN recusa e audita; RED 'versão com PENDENTE oficializada' → GREEN recusa e audita",
-      "evidencia": "duas negativas auditadas + tentativa em ciclo publicado rastreada",
+      "recorte": "Falha 'criar versão em ciclo publicado' e 'oficializar com P-16 pendente' → duas negações auditadas",
+      "evidencia": "log das 2 negações + versão anterior intacta e ainda utilizável",
       "pre": [
         "T2.2.1"
       ],
-      "q": [],
+      "q": [
+        "Q-20"
+      ],
       "leva": "C",
       "status": "planejada"
     },
@@ -300,12 +307,14 @@
       "cas": [
         "CA-2-14"
       ],
-      "recorte": "GREEN 'quarto cenário recusado e auditado' + RED 'P-17 pendente libera cenários ilimitados sem alerta'",
-      "evidencia": "recusa auditada ao exceder o limite + alerta com P-17 pendente",
+      "recorte": "Falha 'criar o cenário N+1 com P-17 definido' → recusa auditada; com P-17 pendente → alerta e uso acumulado",
+      "evidencia": "log da recusa + contagem de cenários do ciclo + alerta registrado no caso pendente",
       "pre": [
         "T2.3.1"
       ],
-      "q": [],
+      "q": [
+        "Q-20"
+      ],
       "leva": "C",
       "status": "planejada"
     },
@@ -319,8 +328,8 @@
         "CA-2-12",
         "CA-2-15"
       ],
-      "recorte": "GREEN 'comparação fecha a soma nos três níveis e aponta P-02 como causador' + RED 'diferença exibida sem identificar o parâmetro'",
-      "evidencia": "tela de comparação nos três níveis + parâmetro causador por linha de diferença",
+      "recorte": "GREEN 'comparação com somas por nível' + REGRESSÃO 'soma dos filhos igual ao pai em cada nível'",
+      "evidencia": "tela da comparação com as somas conferidas em cada nível e o parâmetro apontado por diferença",
       "pre": [
         "T2.3.1"
       ],
@@ -337,8 +346,8 @@
       "cas": [
         "CA-2-18"
       ],
-      "recorte": "GREEN 'versão 2 publicada com motivo e versão 1 ainda consultável' + RED 'editar valor de ciclo publicado é aceito'",
-      "evidencia": "nova versão publicada com motivo + consulta à versão 1 preservada",
+      "recorte": "RED 'UPDATE direto na meta publicada' → GREEN 'negado; versão 2 com motivo e v1 preservada'",
+      "evidencia": "negativa do UPDATE + versão 2 publicada com motivo + versão 1 ainda consultável",
       "pre": [
         "T2.4.2"
       ],
@@ -355,8 +364,8 @@
       "cas": [
         "CA-2-25"
       ],
-      "recorte": "RED 'supervisor lê a carteira do outro pelas três frentes' → GREEN nega nas três e audita",
-      "evidencia": "negativa provada pela interface, pela RPC e por acesso direto à tabela",
+      "recorte": "Falha 'promotor acessando carteira alheia pelas 3 frentes' → negado nas 3 e auditado",
+      "evidencia": "matriz de 5 perfis × 3 frentes com resultado e auditoria da negação",
       "pre": [
         "T2.5.1",
         "T2.5.2"
@@ -374,8 +383,8 @@
       "cas": [
         "CA-2-26"
       ],
-      "recorte": "GREEN 'consulta mostra só a versão publicada com o ciclo declarado' + RED 'rascunho aparece na consulta'",
-      "evidencia": "captura mostrando a versão publicada e o ciclo + negativa ao rascunho",
+      "recorte": "RED 'consulta mostra execução em rascunho e cenário' → GREEN 'só a publicada, com ciclo e memória'",
+      "evidencia": "capturas antes e depois + conferência do ciclo declarado e da memória de cálculo",
       "pre": [
         "T2.4.2",
         "T2.5.2"
@@ -393,12 +402,14 @@
       "cas": [
         "CA-2-30"
       ],
-      "recorte": "GREEN 'extrato traz só a versão publicada e o campo de perfil' + RED 'extrato inclui rascunho ou dado de venda'",
-      "evidencia": "extrato restrito à meta publicada + responsabilidade registrada no documento de entrega",
+      "recorte": "RED 'rascunho e cenário aparecem no extrato' → GREEN 'só publicado, com campo de perfil'",
+      "evidencia": "extrato conferido coluna a coluna + nota de responsabilidade assinada pelo cliente",
       "pre": [
         "T2.6.2"
       ],
-      "q": [],
+      "q": [
+        "Q-22"
+      ],
       "leva": "C",
       "status": "planejada"
     },
@@ -411,8 +422,8 @@
       "cas": [
         "CA-2-03"
       ],
-      "recorte": "GREEN 'Nov/26 reconciliado item a item com o processo atual e aceite registrado' + RED 'divergência sem causa declarada'",
-      "evidencia": "relatório de divergências com causa e aceite do Paulo registrado no changelog",
+      "recorte": "GREEN 'Nov/26 dos dois processos' + REGRESSÃO 'nenhuma diferença sem causa declarada'",
+      "evidencia": "parecer de reconciliação item a item + aceite do Paulo registrado",
       "pre": [
         "T2.1.2",
         "T2.1.3",
@@ -420,7 +431,12 @@
         "D1, D2, D3 e Q-42 respondidas"
       ],
       "q": [
-        "Q-42"
+        "D1",
+        "D2",
+        "D3",
+        "Q-42",
+        "Q-20",
+        "Q-21"
       ],
       "leva": "D",
       "status": "bloqueada"
@@ -434,8 +450,8 @@
       "cas": [
         "CA-2-13"
       ],
-      "recorte": "GREEN 'cenário promovido a candidato com autor e motivo, sem publicação' + RED 'promoção publica direto'",
-      "evidencia": "registro da promoção com autor e motivo + publicação não realizada",
+      "recorte": "RED 'promoção sem motivo' → GREEN 'exige autor e motivo e não publica'",
+      "evidencia": "trilha da promoção + estado do ciclo antes e depois, sem publicação",
       "pre": [
         "T2.3.3"
       ],
@@ -452,8 +468,8 @@
       "cas": [
         "CA-2-20"
       ],
-      "recorte": "GREEN 'quatro marcos gravados em UTC e prazo do K2 calculado' + RED 'marco sem timestamp'",
-      "evidencia": "tabela dos quatro marcos do ciclo + prazo do K2 calculado",
+      "recorte": "GREEN 'prazo calculado a partir dos 4 marcos' + REGRESSÃO 'marco ausente não vira zero'",
+      "evidencia": "relatório de tempos do ciclo + cálculo do prazo conferido à mão",
       "pre": [
         "T2.4.2"
       ],
@@ -470,8 +486,8 @@
       "cas": [
         "CA-2-22"
       ],
-      "recorte": "RED 'editar a meta final de um cliente é aceito' → GREEN recusa e audita; exceção só por regra ou parâmetro",
-      "evidencia": "negativa auditada do ajuste manual + caminho da exceção por parâmetro versionado",
+      "recorte": "Falha 'editar a Meta Final de um Cliente × SKU direto na tabela' → negado; a mesma mudança por parâmetro é aceita no ciclo seguinte",
+      "evidencia": "log da negativa + prova de que a via por parâmetro produz o efeito esperado no ciclo seguinte",
       "pre": [
         "T2.4.2"
       ],
@@ -488,8 +504,8 @@
       "cas": [
         "CA-2-21"
       ],
-      "recorte": "GREEN 'Dez/26 publicado antes de 01/12 com prazo do K2 medido' + RED 'publicação depois do dia 1 sem registro'",
-      "evidencia": "data de publicação de Dez/26 + prazo do K2 do ciclo real",
+      "recorte": "GREEN 'publicação de Dez/26 antes de 01/12' + REGRESSÃO 'prazo do K2 medido e comparável ao baseline de até o dia 5'",
+      "evidencia": "registro da publicação com data e hora + medição do prazo do ciclo",
       "pre": [
         "T2.1.5",
         "T2.4.4",
@@ -497,7 +513,9 @@
         "T2.6.2",
         "T2.5.4"
       ],
-      "q": [],
+      "q": [
+        "Q-22"
+      ],
       "leva": "E",
       "status": "planejada"
     },
@@ -510,8 +528,8 @@
       "cas": [
         "CA-2-27"
       ],
-      "recorte": "GREEN 'cinco contas convidadas veem só a própria carteira e nenhuma credencial aparece' + RED 'credencial exposta em qualquer frente'",
-      "evidencia": "prova com as contas convidadas + varredura sem credencial exposta",
+      "recorte": "Falha 'login com credencial preenchida, endpoint de troca de senha acessível e conta compartilhada' → negado nas 3 frentes",
+      "evidencia": "captura do login sem credencial + resposta do endpoint removido + 5 contas convidadas entrando com senha própria",
       "pre": [
         "T2.5.3",
         "Gate G-SEG satisfeito",
