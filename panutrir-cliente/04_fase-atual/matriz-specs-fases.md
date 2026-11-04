@@ -52,20 +52,39 @@ Legenda: ✔ concluída · ☐ a fazer · 🔒 bloqueada · ⏳ no ar, aguardand
 | T5.1–T5.3 (antigas) | snapshot imutável | T3.3 (execução versionada) |
 | T6.1–T6.3 (antigas) | painel e simulação sintética | SPEC-1-005..007 |
 
-## Fase 2 — Ciclo mensal operável (planejada)
+## Fase 2 — Ciclo mensal operável (documentação publicada; execução não liberada)
 
-| ID | Task | SPEC | Depende de | Q | Status |
-|---|---|---|---|---|---|
-| F2-T1.1 | Avanço das janelas e herança de parâmetros | SPEC-2-001 | Fase 1 aceita | — | ☐ |
-| F2-T1.2 | Carga recorrente do mês fechado | SPEC-2-001 | F2-T1.1 | — | ☐ |
-| F2-T1.3 | Nov/26 em paralelo com o processo atual | SPEC-2-001 | F2-T1.2 | — | ☐ |
-| F2-T2.1 | Tela de parâmetros versionados | SPEC-2-002 | Fase 1 aceita | — | ☐ |
-| F2-T2.2 | Regras por rede (sortimento, substituição, exclusão) | SPEC-2-002 | F2-T2.1 | — | ☐ |
-| F2-T3.1 | Execuções de simulação | SPEC-2-003 | F2-T2.1 | — | ☐ |
-| F2-T3.2 | Comparação de cenários e promoção | SPEC-2-003 | F2-T3.1 | — | ☐ |
-| F2-T4.1 | Aprovar/publicar com bloqueio e versões | SPEC-2-004 | F2-T1.1 | — | ☐ |
-| F2-T4.2 | Consulta por perfil | SPEC-2-004 | F2-T4.1 | — | ☐ |
-| F2-T4.3 | Entrega ao Metabase e medição de K2 (Dez/26) | SPEC-2-004 | F2-T4.1 | — | ☐ |
+Plano, critérios e evidências previstas: `03_documentos/specs-programa/fase-2/` (caminho relativo à raiz da pasta do cliente).
+
+| Task | Descrição | SPEC | Dono | Dependências | Status | Leva |
+|---|---|---|---|---|---|---|
+| T2.1.1 | Derivar as janelas do ciclo do mês de referência (elegibilidade T−3, motor T−24, mix T−6 e idade do SKU em meses) e gravá-las no registro do ciclo | SPEC-2-001 | Léo | Fase 1 aceita (02/11/2026) | ☐ | A |
+| T2.2.1 | Entregar a tela de parâmetros versionados (P-01..P-18) com criação de versão e autor e motivo obrigatórios, aceitando valor PENDENTE explícito | SPEC-2-002 | Léo | Fase 1 aceita (02/11/2026) | ☐ | A |
+| T2.4.1 | Apurar a reconciliação por modo (VALIDAÇÃO DA REGRA e EXECUÇÃO) e exigir, em cada divergência, causa declarada, dono e referência da pendência que a resolve | SPEC-2-004 | Léo | Fase 1 aceita (02/11/2026) | ☐ | A |
+| T2.5.1 | Criar os papéis de consulta e o vínculo usuário→carteira por papel (supervisor, promotor, diretoria), sem inferir vínculo por código ambíguo entre papéis | SPEC-2-005 | Léo | Fase 1 aceita (02/11/2026) | ☐ | A |
+| T2.6.1 | Extrair a meta publicada numa consulta de saída com o layout lido de parâmetro (P-18), recusando layout fixo no código | SPEC-2-006 | Léo | Fase 1 aceita (02/11/2026) | ☐ | A |
+| T2.1.2 | Herdar a versão de parâmetros do ciclo anterior gravando Meta Diretoria, IS, dias úteis e G como requer_confirmação e forçar não reconciliada a execução que usar parâmetro não confirmado | SPEC-2-001 | Léo | T2.1.1 | ☐ | B |
+| T2.1.3 | Construir a rotina operacional de carga mensal sem SQL, com registro e idempotência por mês; entregar fluxo para operação do Ângelo | SPEC-2-001 | Léo | Fase 1 aceita (02/11/2026) | ☐ | B |
+| T2.1.4 | Provar que o ciclo 2026-10 aceito continua idêntico depois da derivação das janelas, comparando insumos e totais por regime | SPEC-2-001 | Léo | T2.1.1 | ☐ | B |
+| T2.2.2 | Mostrar o diff campo a campo entre duas versões de parâmetros e quais execuções usaram cada versão | SPEC-2-002 | Léo | T2.2.1 | ☐ | B |
+| T2.2.3 | Dar vigência por ciclo às regras por rede (sortimento restrito, substituição e exclusões) e recusar vigência retroativa | SPEC-2-002 | Léo | Fase 1 aceita (02/11/2026) | ☐ | B |
+| T2.3.1 | Criar execução de cenário a partir de versão derivada marcada simulacao, sem tocar a execução oficial | SPEC-2-003 | Léo | Fase 1 aceita (02/11/2026) | ☐ | B |
+| T2.4.2 | Executar aprovar e publicar com trilha append-only (ator, operação, alvo, motivo, timestamp UTC) e recusa auditada | SPEC-2-004 | Léo | T2.4.1 | ☐ | B |
+| T2.5.2 | Entregar a consulta por perfil: supervisor vê a própria equipe, promotor a própria carteira e Diretoria a empresa | SPEC-2-005 | Léo | T2.5.1 | ☐ | B |
+| T2.6.2 | Refrescar a meta publicada para o Metabase de forma idempotente e conferir no destino o total publicado | SPEC-2-006 | Léo | T2.6.1; Q-22 respondida; acesso e autorização do destino Metabase verificados | 🔒 | B |
+| T2.2.4 | Bloquear criação de versão em ciclo aprovado ou publicado e recusar oficializar versão com parâmetro pendente, auditando as duas negativas | SPEC-2-002 | Léo | T2.2.1 | ☐ | C |
+| T2.3.2 | Aplicar o limite de cenários por ciclo (P-17) com recusa auditada ao exceder e alerta registrado enquanto o valor estiver pendente | SPEC-2-003 | Léo | T2.3.1 | ☐ | C |
+| T2.3.3 | Comparar dois cenários por canal, supervisor e linha, com diferença absoluta e percentual, somas fechando e o parâmetro causador identificado | SPEC-2-003 | Léo | T2.3.1 | ☐ | C |
+| T2.4.3 | Congelar a publicação e obrigar a correção por nova execução publicada como versão 2 com motivo, preservando a versão 1 consultável | SPEC-2-004 | Léo | T2.4.2 | ☐ | C |
+| T2.5.3 | Aplicar RLS por carteira nas tabelas de resultado e provar a negativa em três frentes: consulta pela interface, RPC e acesso direto à tabela | SPEC-2-005 | Léo | T2.5.1; T2.5.2 | ☐ | C |
+| T2.5.4 | Fazer a consulta exibir somente a meta publicada, com o ciclo declarado e a memória de cálculo disponível | SPEC-2-005 | Léo | T2.4.2; T2.5.2 | ☐ | C |
+| T2.6.3 | Restringir o extrato à meta publicada, incluir o campo de perfil necessário à permissão no destino e registrar a responsabilidade do cliente pela configuração do Metabase | SPEC-2-006 | Léo | T2.6.2 | ☐ | C |
+| T2.1.5 | Rodar Nov/26 pelo sistema e pelo processo atual do Paulo e reconciliar as diferenças uma a uma até o aceite | SPEC-2-001 | Ângelo | T2.1.2; T2.1.3; T2.4.2; D1, D2, D3 e Q-42 respondidas | 🔒 | D |
+| T2.3.4 | Promover um cenário a candidato oficial registrando autor, motivo e versão derivada, sem publicar | SPEC-2-003 | Léo | T2.3.3 | ☐ | D |
+| T2.4.4 | Registrar os quatro marcos do ciclo (mês fechado carregado, execução, aprovação e publicação) com timestamp UTC e calcular o prazo do K2 | SPEC-2-004 | Léo | T2.4.2 | ☐ | D |
+| T2.4.5 | Recusar ajuste manual do número final em qualquer nível e exigir que a exceção entre por regra ou por parâmetro versionado | SPEC-2-004 | Léo | T2.4.2 | ☐ | D |
+| T2.4.6 | Publicar o ciclo Dez/26 antes do primeiro dia de dezembro e medir o prazo do K2 no ciclo real | SPEC-2-004 | Ângelo | T2.1.5; T2.4.4; T2.4.5; T2.6.2; T2.5.4 | ☐ | E |
+| T2.5.5 | Provar o isolamento real com contas convidadas (2 supervisores, 2 promotores e diretoria) e nenhuma credencial exposta em tela, front, migration ou endpoint | SPEC-2-005 | Léo | T2.5.3; Gate G-SEG satisfeito; Convites e privatização dos repositórios concluídos pelo cliente | 🔒 | E |
 
 ## Fase 3 — Acompanhamento e indicadores (planejada)
 
