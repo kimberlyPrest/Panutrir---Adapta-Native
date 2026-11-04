@@ -1,7 +1,7 @@
 {
   "schemaVersion": "adapta-cliente-handoff/v1",
   "phase": 2,
-  "generatedAt": "2026-11-04T14:12:00Z",
+  "generatedAt": "2026-11-04T21:00:00Z",
   "versions": {
     "adapta": "0.9.3",
     "adaptaCliente": "0.9.3"
@@ -9,7 +9,7 @@
   "files": [
     {
       "path": ".adapta-cliente/estado-atual.md",
-      "sha256": "4a7fa836adb04b7c2c57a104f6369f325962bbf66c4fd93d8f4f069e009d2469",
+      "sha256": "a291a78a57f1bfef791ec5d39888e747b95e6c06962ce0a9016cc6c5e8e770e5",
       "classification": "template-publico"
     },
     {
@@ -44,7 +44,7 @@
     },
     {
       "path": "03_documentos/escopo.md",
-      "sha256": "19881e13df2b1bda55a7ea3b4559329e60423efb3c486304c1ecda64909d0c74",
+      "sha256": "f52cb3f8aeb98696b56b15d7c70f880c62fdeaabbf41367cdfa33d8df450f92f",
       "classification": "template-publico"
     },
     {
@@ -54,7 +54,7 @@
     },
     {
       "path": "03_documentos/perguntas-ao-cliente.md",
-      "sha256": "5d999737c5b4ed14e69150a60679cb2507ab3b0dc1049b8a281604853bf4c2c1",
+      "sha256": "05bcd86bd2eaf59d0ce45352203b3df1748367c56e6b186b1e9db384d9a572da",
       "classification": "template-publico"
     },
     {
@@ -109,52 +109,52 @@
     },
     {
       "path": "04_fase-atual/README.md",
-      "sha256": "2c1acdbea5879f2e18261bae49b40cfa69b8f21394192513c38707eb856bef39",
+      "sha256": "9b760f3ca4aea96b00867e2fb09e02049223422b1805bddff78c37f32baa0248",
       "classification": "template-publico"
     },
     {
       "path": "04_fase-atual/fase.md",
-      "sha256": "2119bdd25c6263c6ef58ba65a8769d916f2ccc5c1554cb2823c120125078f3d0",
+      "sha256": "97d08dc2caeffa541d4e4fa89e2d09fdc258ede0edbab5c573dbf42e8df266e4",
       "classification": "fase-atual"
     },
     {
       "path": "04_fase-atual/matriz-specs-fases.md",
-      "sha256": "326b7d8806c6567082e46d7b4282d1c61523a7ecd5d8a6f1f3b3a8528b5ba196",
+      "sha256": "356b5f5c500b466fe28782c28754167f8fc3cbeba57d26016f811906f903f6c0",
       "classification": "template-publico"
     },
     {
       "path": "04_fase-atual/specs/SPEC-2-001.md",
-      "sha256": "da64ead1b7080b33d921c0aae8ec1126b0d25bcf3e974e447d877e8629470b32",
+      "sha256": "fc6005e7af4f188499c36671493887ae6da9824ac840e87776e5320b6eee2d31",
       "classification": "spec-fase-atual"
     },
     {
       "path": "04_fase-atual/specs/SPEC-2-002.md",
-      "sha256": "eb0943254b59452b2ad1df41786c93d4bb35ce22980f5b4b3d2996e9172b59c2",
+      "sha256": "7081d5883b828148d722dea270a94ddb0800599582d59abbc4f8849ce0e40edd",
       "classification": "spec-fase-atual"
     },
     {
       "path": "04_fase-atual/specs/SPEC-2-003.md",
-      "sha256": "da149be3007b1da5838415dc57da1c60c339ddfbd8c9e26e5f65ed56e57be871",
+      "sha256": "fb704926ec66cfa92472c94549a9184967b707a96c6c155b902d2fc43ac0039c",
       "classification": "spec-fase-atual"
     },
     {
       "path": "04_fase-atual/specs/SPEC-2-004.md",
-      "sha256": "3565cb752d718804f711d7193c6c9e16151475af87c0d3430d669e646cc07ad2",
+      "sha256": "2169ee1c2253533d673149162a268705b0080f302409265870a448431f539407",
       "classification": "spec-fase-atual"
     },
     {
       "path": "04_fase-atual/specs/SPEC-2-005.md",
-      "sha256": "97335c6001ce017e5989c38c0d84c588be5d067157352ec206e21d61524baea4",
+      "sha256": "d4445f9ab4b696f70a02401569df0f85583878869d30cddc104c39bc07185eb3",
       "classification": "spec-fase-atual"
     },
     {
       "path": "04_fase-atual/specs/SPEC-2-006.md",
-      "sha256": "a54779222b2fe624577e4a33af9a947c430391c8ed14696ad70abd302e7b0dd8",
+      "sha256": "a051abb6a63f1d3860c5e36c6b5411e613846a7a841d36596d4117f37a0fe75c",
       "classification": "spec-fase-atual"
     },
     {
       "path": "04_fase-atual/tasks.json",
-      "sha256": "833adb3e76be458d244888e41d415e0404f0c3571463620f2bf7d6c3b08e632f",
+      "sha256": "24fc6976f6f1f905457d4c3d5d6e95c2b64cd6bc31323fcc333958d3612560c5",
       "classification": "template-publico"
     },
     {
@@ -329,22 +329,22 @@
     },
     {
       "path": "CLAUDE.md",
-      "sha256": "0b4324fa1146ba8d3737f49405dcbc445facf317657025c55bb4785bfe37c3ad",
+      "sha256": "add8620c82abbba12c0c2d3d3ce51864c09ebfb2d64dd466ad16d74b3fe1831f",
       "classification": "template-publico"
     },
     {
       "path": "README.md",
-      "sha256": "b5c486e370e54fda00735c798cd38399fdf550c21943eb4efc628ef4794a9810",
+      "sha256": "351b89d53d18f99c0a5686bd056e80630164c8975fd71844c0c3673a5f5fd76d",
       "classification": "template-publico"
     },
     {
       "path": "STATUS.md",
-      "sha256": "1db53ce5a32b5d51ab5b14b655b17813d22fb821bd407f186543741f9bf283d0",
+      "sha256": "e957bfc19ad5a707f73e8aeb380981bf7e1f56c27e2fa75bb2a0b5db05b1550f",
       "classification": "template-publico"
     },
     {
       "path": "changelog.md",
-      "sha256": "65a31ffd13f71719a024890d187a7c5801fecb6681bd5ee043dc4ace5c3f68d2",
+      "sha256": "664de8e5b6a4b54a3ae5becb0a82d118f9e95e2d2b599aa2651a9964c25b3c3a",
       "classification": "template-publico"
     },
     {

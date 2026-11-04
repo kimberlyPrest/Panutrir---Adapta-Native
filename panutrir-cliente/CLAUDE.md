@@ -4,7 +4,7 @@
 **Consultora:** Kim · **CSM:** Matheus  
 **Dono do projeto:** Paulo · **Implementação:** Léo · **Champion operacional:** Ângelo  
 **Arquitetura:** Supabase + front React no Skip  
-**Fase atual:** 2 — Ciclo mensal operável (EMENDA 02/2026); **execução não liberada**. A Fase 1 está em `05_entregas/fase-1/`
+**Fase atual:** 2 — Ciclo mensal operável (EMENDA 02/2026); **liberada para execução** pela consultora (Kim, 04/11/2026). A Fase 1 está em `05_entregas/fase-1/`
 
 ## Resultado esperado da fase
 O ciclo do mês acontece dentro do sistema: Nov/26 roda em paralelo com a planilha do Paulo e é reconciliado; Dez/26 é aprovado, publicado e consultado pela equipe sem a planilha.
@@ -19,6 +19,6 @@ Tasks em sequência, sem pedir autorização nem teste entre elas. O teste do cl
 
 ## Limites da Fase 2
 - Dados reais **permitidos** no Supabase do projeto. Nunca em repositório.
-- **Execução depende de liberação expressa da consultora**; a fase consome as pendências da Fase 1 (T1.3, T5.1/CA-1-13) e as decisões D1/D2/D3 como bloqueios declarados, sem presumir resposta.
+- **Execução liberada expressamente pela consultora (Kim, 04/11/2026)**; a fase consome as pendências da Fase 1 (T1.3, T5.1/CA-1-13) e as decisões D1/D2/D3 como bloqueios declarados, sem presumir resposta.
 - A EMENDA 01 (ago/26) está superada; não usar `2026-09-23-metodologia-oficial-ago-2026.md`.
 - A documentação da Fase 1 fica em `05_entregas/fase-1/` (histórico; não é fonte de status).

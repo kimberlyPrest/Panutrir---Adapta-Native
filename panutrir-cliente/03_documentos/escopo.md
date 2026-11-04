@@ -44,4 +44,4 @@ Supabase (Auth, Postgres, RLS, Edge Functions, migrations) + front React no Skip
 
 ## Atualização documental — 04/11/2026
 
-A Fase 2 foi detalhada em seis SPECs, 27 tasks e 31 critérios e está na localização canônica `04_fase-atual/` desde 04/11/2026. RF-21 fica na SPEC-2-005, RF-22 na SPEC-2-006 e o prazo K2 na SPEC-2-004. A publicação documental foi autorizada pela Kim; não libera execução, não fecha gates nem altera o aceite e as pendências da Fase 1.
+A Fase 2 foi detalhada em seis SPECs, 27 tasks e 31 critérios e está na localização canônica `04_fase-atual/` desde 04/11/2026. RF-21 fica na SPEC-2-005, RF-22 na SPEC-2-006 e o prazo K2 na SPEC-2-004. A publicação documental foi autorizada pela Kim e a execução foi **liberada** por ela em 04/11/2026; a liberação não fecha gates nem altera o aceite e as pendências da Fase 1.

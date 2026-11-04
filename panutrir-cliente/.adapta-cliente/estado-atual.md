@@ -4,10 +4,10 @@
 - task_id: nenhuma
 - executor: Paulo
 - owner_informativo: Léo
-- spec: nenhuma
+- spec: SPEC-2-001..SPEC-2-006 (Fase 2)
 - analise: nenhuma
-- etapa: bloqueada
-- autorizacao_implementacao: confirmada 2026-10-30 12:51 — "Depois faça a fase inteira, até concluir todas as SPECs"
+- etapa: liberada_para_execucao
+- autorizacao_implementacao: confirmada 2026-11-04 — Fase 2 liberada para execução pela consultora (Kim); gates de T2.1.5, T2.5.5 e T2.6.2 seguem valendo
 - aguardando_teste: T1.3 (login), T7.5 (aceite) — dependem de dado do cliente
 - em_espera: T5.2/T5.4/T5.5 — Q-08/Q-39/Q-16; T4.3 — Q-07; T7.1 — Q-21; T7.4 — Q-22; T1.3 — e-mails de Léo e Ângelo; T2.3 — carga oficial no Supabase
 - teste_humano: pendente
@@ -19,5 +19,5 @@
 - skip_publicacao: nao_aplicavel
 - pendente_github: nao (enviado em 30/10 — app 3df5a4f, docs commit da sincronização)
 - ultima_acao: T1.2, T3.2 e T3.3 aplicadas no Supabase, provadas localmente (19/19) e publicadas nos dois repositórios
-- proxima_acao: responder as perguntas Q-04, Q-08, Q-21, Q-22 e enviar os e-mails de Léo e Ângelo
-- atualizado_em: 2026-10-30T13:45:00-03:00
+- proxima_acao: iniciar a leva A da Fase 2 (T2.1.1, T2.2.1, T2.4.1, T2.5.1, T2.6.1) conforme 04_fase-atual/matriz-specs-fases.md
+- atualizado_em: 2026-11-04T18:00:00-03:00

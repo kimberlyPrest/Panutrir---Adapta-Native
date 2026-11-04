@@ -9,4 +9,4 @@ Pasta operacional da Intranet Panutrir (Metas Comerciais + Logística).
 - `05_entregas/`: fases anteriores, arquivadas por fase (`fase-1/`).
 - `06_notas/`: metodologia oficial, emendas e aprendizado contínuo.
 
-Fase atual: 2 — Ciclo mensal operável (EMENDA 02/2026). **Execução não liberada.** A Fase 1 foi aceita em 02/11/2026 e está arquivada em `05_entregas/fase-1/`.
+Fase atual: 2 — Ciclo mensal operável (EMENDA 02/2026). **Liberada para execução** pela consultora (Kim, 04/11/2026). A Fase 1 foi aceita em 02/11/2026 e está arquivada em `05_entregas/fase-1/`.

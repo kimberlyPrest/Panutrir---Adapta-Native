@@ -1,8 +1,8 @@
 # Matriz SPECs × Tasks — Fase 2 (fase aberta)
 
-Localização canônica: `04_fase-atual/`. A fase está aberta; a **execução não está liberada**.
+Localização canônica: `04_fase-atual/`. A fase está aberta; a execução está **liberada** pela consultora (Kim, 04/11/2026).
 
-Fonte única documental: `tasks.json`. As tabelas em `fase.md`, nas seis SPECs e nesta matriz devem permanecer coerentes. Publicação não libera execução.
+Fonte única documental: `tasks.json`. As tabelas em `fase.md`, nas seis SPECs e nesta matriz devem permanecer coerentes. A liberação não fecha gates: tasks 🔒 seguem bloqueadas até suas pré-condições.
 
 Legenda: ☐ a fazer · 🔒 bloqueada · ✔ concluída.
 

@@ -1,12 +1,12 @@
 # Fase 2 — Ciclo mensal operável
 
-**Estado:** ABERTA — documentação da fase na localização canônica `04_fase-atual/`. **Execução não liberada pela consultora.**
+**Estado:** ABERTA — documentação da fase na localização canônica `04_fase-atual/`. **Liberada para execução** pela consultora (Kim, 04/11/2026).
 **Janela indicativa:** 17/11 – 05/12/2026 (escopo de 20/10; datas indicativas, Matheus confirma com o cliente)
 **Objetivo:** o ciclo do mês acontece dentro do sistema — Nov/26 roda em paralelo com a planilha do Paulo e é reconciliado, e Dez/26 é aprovado, publicado e consultado pela equipe sem a planilha.
 
 ## Situação documental — 04/11/2026
 
-Publicação documental autorizada pela Kim em 04/11/2026 e reorganizada para a localização canônica no mesmo dia. **A execução da Fase 2 ainda depende de liberação expressa.** A Fase 1 foi aceita em 02/11/2026 e está arquivada em `05_entregas/fase-1/` (caminho relativo à raiz desta pasta), com T1.3 e T5.1/CA-1-13 abertas como pendência carregada; seus registros são preservados. Critérios, testes e evidências abaixo são requisitos a cumprir, não resultados alcançados.
+Publicação documental autorizada pela Kim em 04/11/2026 e reorganizada para a localização canônica no mesmo dia. **A execução da Fase 2 foi liberada expressamente pela consultora (Kim) em 04/11/2026.** A Fase 1 foi aceita em 02/11/2026 e está arquivada em `05_entregas/fase-1/` (caminho relativo à raiz desta pasta), com T1.3 e T5.1/CA-1-13 abertas como pendência carregada; seus registros são preservados. Critérios, testes e evidências abaixo são requisitos a cumprir, não resultados alcançados.
 
 A situação de partida descrita em 03/11 é um retrato daquela data. O commit `9f4354c` de 04/11 registra a conferência Q-21 e a correção do GAP Indireto; consulte `../changelog.md` e o registro central antes de executar. A Q-21 não deve ser solicitada novamente como se essa conferência não existisse; sua suficiência para cada critério ainda precisa ser verificada. Demais decisões não são presumidas resolvidas.
 
@@ -43,7 +43,7 @@ São **6 SPECs** — dentro do range saudável de 3 a 7. A divisão difere da ve
 
 - **CA-2-03** — Nov/26 reconciliado com o processo atual, toda diferença com causa declarada e o aceite do Paulo. É a liberação L2 do escopo (desliga a planilha).
 - **CA-2-16** — só execução reconciliada **no modo EXECUÇÃO** é aprovada; o 19/19 do modo regra não aprova.
-- **CA-2-20** — Dez/26 publicado antes de 01/12/2026, com o prazo do K2 medido.
+- **CA-2-21** — Dez/26 publicado antes de 01/12/2026, com o prazo do K2 medido (os quatro marcos que o medem são o CA-2-20).
 - **CA-2-27** — isolamento provado com contas convidadas, sem credencial exposta. Depende do gate de segurança G-SEG.
 
 ## Tasks
@@ -125,6 +125,7 @@ As provas automáticas (RED/GREEN/REGRESSÃO) substituem o teste humano em tudo 
 
 ## Histórico
 
+- **04/11/2026** — **Execução liberada pela consultora (Kim).** A liberação não fecha gate nem pendência: T2.1.5, T2.5.5 e T2.6.2 seguem 🔒 até suas pré-condições; demais tasks seguem a ordem das levas.
 - **04/11/2026** — Pacote documental movido para a localização canônica: fase, seis SPECs, matriz e tasks em
   `04_fase-atual/`; a documentação da Fase 1 passou para `05_entregas/fase-1/`. Mudança de organização:
   não libera execução, não fecha gate e não altera o aceite nem as pendências da Fase 1.

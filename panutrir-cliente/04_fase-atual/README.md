@@ -1,6 +1,6 @@
 # Fase atual — Fase 2: ciclo mensal operável
 
-Fase aberta do programa (EMENDA 02/2026). **Execução não liberada** pela consultora; esta pasta é a
+Fase aberta do programa (EMENDA 02/2026). **Liberada para execução** pela consultora (Kim, 04/11/2026); esta pasta é a
 localização canônica da documentação da fase.
 
 - [fase.md](fase.md) — fase, entrega demonstrável, critérios e tabela operacional das tasks.
