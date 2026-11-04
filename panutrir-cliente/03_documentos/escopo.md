@@ -41,3 +41,7 @@ Não substitui SAP/Metabase, não calcula remuneração, não usa potencial exte
 ## 7. Arquitetura
 
 Supabase (Auth, Postgres, RLS, Edge Functions, migrations) + front React no Skip, um único projeto para os dois módulos. Cálculo determinístico no banco/Edge Function; IA só na Fase 5 e fora do caminho crítico.
+
+## Atualização documental — 04/11/2026
+
+A Fase 2 foi detalhada em seis SPECs, 27 tasks e 31 critérios em `specs-programa/fase-2/`. RF-21 fica na SPEC-2-005, RF-22 na SPEC-2-006 e o prazo K2 na SPEC-2-004. A publicação documental foi autorizada pela Kim; não libera execução, não fecha gates nem altera o aceite e as pendências da Fase 1.
