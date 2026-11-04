@@ -15,10 +15,9 @@ Supabase (Auth, Postgres, RLS, Edge Functions, migrations versionadas) + front R
 Vale desde 30/10/2026 e substitui o ritmo antigo, em que cada task pedia autorização e teste.
 
 - Construa as tasks da matriz em sequência, uma por vez, sem pedir autorização nem teste entre elas. Cada task fecha pelas provas automáticas da SPEC: RED, GREEN, REGRESSÃO e conferência contra a fonte ou o gabarito.
-- O teste do cliente é por SPEC e segue a seção `## Teste humano do cliente` de cada uma. Na Fase 1 são dois:
-  1. **SPEC-1-001, na T1.3:** cada pessoa entra com a própria conta convidada, porque a troca de senha muda o login que a equipe já usa.
-  2. **SPEC-1-007, no fim da fase:** Paulo confere o painel, a consulta e a exportação de Out/26. É o aceite da fase (T7.5).
-- As SPECs 1-002 a 1-006 não têm nada para o cliente ver e fecham pela prova automática contra a fonte e o gabarito G-xx. Paulo e Ângelo veem esses números no painel da SPEC-1-007.
+- O teste do cliente é por SPEC e segue a seção `## Teste humano do cliente` de cada uma. Na Fase 2 são seis, um por SPEC; a lista está em `04_fase-atual/fase.md` (`## Teste do cliente`).
+- As demais verificações fecham pela prova automática da SPEC (RED, GREEN, REGRESSÃO) contra a fonte e o gabarito G-xx.
+- A Fase 1 está aceita (02/11/2026) e arquivada em `05_entregas/fase-1/`; o teste dela não se repete.
 - Continuam sendo paradas: pergunta `Q-xx` que muda a implementação (protocolo abaixo), acesso que só o cliente tem (como a conexão do banco), divergência que a SPEC manda revisar com o cliente (CA-1-12) e as autorizações listadas em Regras.
 
 ## Protocolo de perguntas ao cliente
