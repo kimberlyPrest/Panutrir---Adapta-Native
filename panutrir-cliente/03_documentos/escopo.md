@@ -13,7 +13,7 @@ Ao final, a Panutrir gera, aprova e publica a meta mensal Cliente × SKU pela pr
 | Fase | Entrega demonstrável | SPECs | Janela indicativa |
 |---|---|---|---|
 | **1 — Motor de meta Cliente × SKU com dados reais** | Out/26 reproduzido no sistema: R$13MM fechados, gabarito batendo, consulta com memória de cálculo | SPEC-1-001..007 | 20/10 – 14/11/2026 |
-| **2 — Ciclo mensal operável** | Nov/26 em paralelo com a planilha; Dez/26 publicado pelo sistema, com cenários e consulta da equipe | SPEC-2-001..004 | 17/11 – 05/12/2026 |
+| **2 — Ciclo mensal operável** | Nov/26 em paralelo com a planilha; Dez/26 publicado pelo sistema, com cenários e consulta da equipe | SPEC-2-001..006 | 17/11 – 05/12/2026 |
 | **3 — Acompanhamento e indicadores** | realizado × meta, trocas, visitas, diagnósticos (ROI promocional opcional) | SPEC-3-001..004 | 08/12 – 19/12/2026 |
 | **4 — Módulo Logística** | CD modelo com proposta de cargas comparada ao plano manual | SPEC-4-001..003 (descoberta começa em 21/10) | 05/01 – 23/01/2027 |
 | **5 — Integração e IA assistiva** | meta → volume por CD; IA explica e sugere; KPIs finais e passagem | SPEC-5-001..003 | 26/01 – 06/02/2027 |
@@ -44,4 +44,4 @@ Supabase (Auth, Postgres, RLS, Edge Functions, migrations) + front React no Skip
 
 ## Atualização documental — 04/11/2026
 
-A Fase 2 foi detalhada em seis SPECs, 27 tasks e 31 critérios em `specs-programa/fase-2/`. RF-21 fica na SPEC-2-005, RF-22 na SPEC-2-006 e o prazo K2 na SPEC-2-004. A publicação documental foi autorizada pela Kim; não libera execução, não fecha gates nem altera o aceite e as pendências da Fase 1.
+A Fase 2 foi detalhada em seis SPECs, 27 tasks e 31 critérios e está na localização canônica `04_fase-atual/` desde 04/11/2026. RF-21 fica na SPEC-2-005, RF-22 na SPEC-2-006 e o prazo K2 na SPEC-2-004. A publicação documental foi autorizada pela Kim; não libera execução, não fecha gates nem altera o aceite e as pendências da Fase 1.
