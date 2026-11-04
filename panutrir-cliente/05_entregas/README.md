@@ -1,13 +1,14 @@
 # Entregas
 
-Pasta de arquivo das fases encerradas no repositório do cliente.
+Pasta de arquivo das fases anteriores no repositório do cliente.
 
-Uma fase só é arquivada aqui quando o fechamento é liberado pela consultora; até lá ela permanece
-em `04_fase-atual/`. Quando isso acontece, o conteúdo de `04_fase-atual/` (fase, SPECs e matriz)
-passa para `05_entregas/fase-N/` e a fase seguinte ocupa `04_fase-atual/`.
+Uma fase passa para cá quando a fase seguinte assume a pasta da fase aberta. O conteúdo de
+`04_fase-atual/` (fase, SPECs e matriz) vai para `05_entregas/fase-N/` e a fase seguinte ocupa
+`04_fase-atual/`. O arquivamento é mudança de localização: **não é recibo de fechamento** e não encerra
+pendência nenhuma.
 
 ## Estado
 
-Nenhuma fase arquivada ainda. A Fase 1 continua em `04_fase-atual/`: o aceite do cliente
-(T7.5/CA-1-25, 02/11/2026) está registrado, e a fase segue com **duas tasks abertas — T1.3 e T5.1**
-(matriz `04_fase-atual/matriz-specs-fases.md`). Não há entrega encerrada nesta pasta.
+- [fase-1/](fase-1/) — Fase 1, Motor de meta Cliente × SKU com dados reais. **Aceita pelo cliente em
+  02/11/2026** (T7.5/CA-1-25), arquivada em 04/11/2026 quando a Fase 2 passou a ser a fase aberta.
+  Chega com **28 de 30 tarefas** concluídas
