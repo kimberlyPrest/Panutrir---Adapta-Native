@@ -1,7 +1,7 @@
 {
   "schemaVersion": "adapta-cliente-handoff/v1",
-  "phase": 1,
-  "generatedAt": "2026-11-04T16:20:00Z",
+  "phase": 2,
+  "generatedAt": "2026-11-04T14:12:00Z",
   "versions": {
     "adapta": "0.9.3",
     "adaptaCliente": "0.9.3"
@@ -29,7 +29,7 @@
     },
     {
       "path": "01_projeto/visao-do-projeto.md",
-      "sha256": "16c7d642903ea14f468f7810a66f57a76accf200e4a88c4720660e4a9960a730",
+      "sha256": "c442658abe97a66dcc5501bfe6cf4ef4c67165db1af0124f28c0a553578a0a15",
       "classification": "template-publico"
     },
     {
@@ -44,7 +44,7 @@
     },
     {
       "path": "03_documentos/escopo.md",
-      "sha256": "ce03600eddf1716b7f57cf8bb71e2189ca099d54ba72dd980639497743b8f012",
+      "sha256": "19881e13df2b1bda55a7ea3b4559329e60423efb3c486304c1ecda64909d0c74",
       "classification": "template-publico"
     },
     {
@@ -55,56 +55,6 @@
     {
       "path": "03_documentos/perguntas-ao-cliente.md",
       "sha256": "5d999737c5b4ed14e69150a60679cb2507ab3b0dc1049b8a281604853bf4c2c1",
-      "classification": "template-publico"
-    },
-    {
-      "path": "03_documentos/specs-programa/fase-2/README.md",
-      "sha256": "59f851732f806da52b9370545fff247a25776278236a4bd0f7bb6b9dc2df48eb",
-      "classification": "template-publico"
-    },
-    {
-      "path": "03_documentos/specs-programa/fase-2/SPEC-2-001.md",
-      "sha256": "aa33cd17d99b4837e19e797facddfa157236287a5e1d176edb530b7c481f0b9b",
-      "classification": "template-publico"
-    },
-    {
-      "path": "03_documentos/specs-programa/fase-2/SPEC-2-002.md",
-      "sha256": "b43023c6ced867496d0e55d3d9dc8b952dbb3a7b64d2e5fbc472c5879d25bc48",
-      "classification": "template-publico"
-    },
-    {
-      "path": "03_documentos/specs-programa/fase-2/SPEC-2-003.md",
-      "sha256": "e202d81b16cda9d59f2b29519808945aed709b938d439ec4da7d914d286ec003",
-      "classification": "template-publico"
-    },
-    {
-      "path": "03_documentos/specs-programa/fase-2/SPEC-2-004.md",
-      "sha256": "00e861a9cfb6beb3eb739c048959c2b65f291a897c98e9915e104c209a684d4e",
-      "classification": "template-publico"
-    },
-    {
-      "path": "03_documentos/specs-programa/fase-2/SPEC-2-005.md",
-      "sha256": "010b2b48fc17e1e2f01a1a2044a92fe933dbf5b474d61df298a34904e8de9aba",
-      "classification": "template-publico"
-    },
-    {
-      "path": "03_documentos/specs-programa/fase-2/SPEC-2-006.md",
-      "sha256": "0c09663e2a9288e8c15c7efe76f2322b667da108d39ef8b3bc3f08496634409b",
-      "classification": "template-publico"
-    },
-    {
-      "path": "03_documentos/specs-programa/fase-2/matriz-specs-fases.md",
-      "sha256": "16b125d656a1c289842d5ec3580abab9011ef1768011e63deb2342f9c8f50fbe",
-      "classification": "template-publico"
-    },
-    {
-      "path": "03_documentos/specs-programa/fase-2/plano.md",
-      "sha256": "36550ca81e661063fe602429d70d343d42660f2487c3062b3b0d866bde712d11",
-      "classification": "template-publico"
-    },
-    {
-      "path": "03_documentos/specs-programa/fase-2/tasks.json",
-      "sha256": "833adb3e76be458d244888e41d415e0404f0c3571463620f2bf7d6c3b08e632f",
       "classification": "template-publico"
     },
     {
@@ -158,53 +108,108 @@
       "classification": "template-publico"
     },
     {
+      "path": "04_fase-atual/README.md",
+      "sha256": "2c1acdbea5879f2e18261bae49b40cfa69b8f21394192513c38707eb856bef39",
+      "classification": "template-publico"
+    },
+    {
       "path": "04_fase-atual/fase.md",
-      "sha256": "824fb2b2d6b03dd00f31c9137c8be84f3b0dc86a1df7f627382e725a7fa495e6",
+      "sha256": "2119bdd25c6263c6ef58ba65a8769d916f2ccc5c1554cb2823c120125078f3d0",
       "classification": "fase-atual"
     },
     {
       "path": "04_fase-atual/matriz-specs-fases.md",
-      "sha256": "cd82a5d51c0d377ca86ba3e57a9493f0b54e0645421f3cc89defc30299eedd27",
+      "sha256": "326b7d8806c6567082e46d7b4282d1c61523a7ecd5d8a6f1f3b3a8528b5ba196",
       "classification": "template-publico"
     },
     {
-      "path": "04_fase-atual/specs/SPEC-1-001.md",
-      "sha256": "6cdda6ea94603f6d309fbea954004e73648d7e6912b6455f1369891339b7c238",
+      "path": "04_fase-atual/specs/SPEC-2-001.md",
+      "sha256": "da64ead1b7080b33d921c0aae8ec1126b0d25bcf3e974e447d877e8629470b32",
       "classification": "spec-fase-atual"
     },
     {
-      "path": "04_fase-atual/specs/SPEC-1-002.md",
-      "sha256": "4e8961150501ae3a3ee8397f53fc8096de833718efbc1ef7ad966beabd02cc68",
+      "path": "04_fase-atual/specs/SPEC-2-002.md",
+      "sha256": "eb0943254b59452b2ad1df41786c93d4bb35ce22980f5b4b3d2996e9172b59c2",
       "classification": "spec-fase-atual"
     },
     {
-      "path": "04_fase-atual/specs/SPEC-1-003.md",
-      "sha256": "a498925b05cefb45f65c7d32d8d78451349f52196e5fb8228a19911fefc0a3ec",
+      "path": "04_fase-atual/specs/SPEC-2-003.md",
+      "sha256": "da149be3007b1da5838415dc57da1c60c339ddfbd8c9e26e5f65ed56e57be871",
       "classification": "spec-fase-atual"
     },
     {
-      "path": "04_fase-atual/specs/SPEC-1-004.md",
-      "sha256": "849edc7e57fb1d8c69a87c69504292835840cb874e32b915aa5188c068d39935",
+      "path": "04_fase-atual/specs/SPEC-2-004.md",
+      "sha256": "3565cb752d718804f711d7193c6c9e16151475af87c0d3430d669e646cc07ad2",
       "classification": "spec-fase-atual"
     },
     {
-      "path": "04_fase-atual/specs/SPEC-1-005.md",
-      "sha256": "d6b152240c37e3c7cdded77790da8fa8f1962fd6717b00cd74a1031e80933be8",
+      "path": "04_fase-atual/specs/SPEC-2-005.md",
+      "sha256": "97335c6001ce017e5989c38c0d84c588be5d067157352ec206e21d61524baea4",
       "classification": "spec-fase-atual"
     },
     {
-      "path": "04_fase-atual/specs/SPEC-1-006.md",
-      "sha256": "b099c071201f6fb1dc14f4e05f949ec4af14a3c1c3f3ce185d731dd405dec215",
+      "path": "04_fase-atual/specs/SPEC-2-006.md",
+      "sha256": "a54779222b2fe624577e4a33af9a947c430391c8ed14696ad70abd302e7b0dd8",
       "classification": "spec-fase-atual"
     },
     {
-      "path": "04_fase-atual/specs/SPEC-1-007.md",
-      "sha256": "d6e3cb6bdc6c27a08da9f1601b68cc4f555b1f3f595fd75acc59eb31f450129d",
-      "classification": "spec-fase-atual"
+      "path": "04_fase-atual/tasks.json",
+      "sha256": "833adb3e76be458d244888e41d415e0404f0c3571463620f2bf7d6c3b08e632f",
+      "classification": "template-publico"
     },
     {
       "path": "05_entregas/README.md",
-      "sha256": "64cdcb788b829ad7f865e17da64e718cef0ae5f986068caff5340047ff5bde7f",
+      "sha256": "d86d1df1fba8e8ec64f83e7466b69db86ab7210598abacfacd50bf78a4d9f11d",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/fase-1/README.md",
+      "sha256": "7819e374df573d1fbfcff5c08f9e07d5d473672b412916be9fc98c3fbddbbd93",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/fase-1/fase.md",
+      "sha256": "b53f4ee751c42bf1daf512d0542451452835b5b6cfc32b29c93622faaa02da22",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/fase-1/matriz-specs-fases.md",
+      "sha256": "8bfec03d7c0026d194672f6bbf60a8b25b446cbe5482441b0a6d6e732243b22f",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/fase-1/specs/SPEC-1-001.md",
+      "sha256": "6cdda6ea94603f6d309fbea954004e73648d7e6912b6455f1369891339b7c238",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/fase-1/specs/SPEC-1-002.md",
+      "sha256": "4e8961150501ae3a3ee8397f53fc8096de833718efbc1ef7ad966beabd02cc68",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/fase-1/specs/SPEC-1-003.md",
+      "sha256": "a498925b05cefb45f65c7d32d8d78451349f52196e5fb8228a19911fefc0a3ec",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/fase-1/specs/SPEC-1-004.md",
+      "sha256": "849edc7e57fb1d8c69a87c69504292835840cb874e32b915aa5188c068d39935",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/fase-1/specs/SPEC-1-005.md",
+      "sha256": "d6b152240c37e3c7cdded77790da8fa8f1962fd6717b00cd74a1031e80933be8",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/fase-1/specs/SPEC-1-006.md",
+      "sha256": "b099c071201f6fb1dc14f4e05f949ec4af14a3c1c3f3ce185d731dd405dec215",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/fase-1/specs/SPEC-1-007.md",
+      "sha256": "d6e3cb6bdc6c27a08da9f1601b68cc4f555b1f3f595fd75acc59eb31f450129d",
       "classification": "template-publico"
     },
     {
@@ -319,27 +324,27 @@
     },
     {
       "path": "AGENTS.md",
-      "sha256": "e07bae307d92e2f68cc5c74c3db1f7f1d2453498d005f27d34e1a1848a77da00",
+      "sha256": "25e071e176b4b2a86e9a72005f52f5784b6a3df0d565181bd2d3bbd3f2ff4cad",
       "classification": "template-publico"
     },
     {
       "path": "CLAUDE.md",
-      "sha256": "8e6752066a23756a8839eb936771e4904f97db7fd6305b02c918f3a21dfd84e8",
+      "sha256": "0b4324fa1146ba8d3737f49405dcbc445facf317657025c55bb4785bfe37c3ad",
       "classification": "template-publico"
     },
     {
       "path": "README.md",
-      "sha256": "18398323c1f5d307d54e8eda8091d108b3abbc32963b957133f65f07913722e3",
+      "sha256": "b5c486e370e54fda00735c798cd38399fdf550c21943eb4efc628ef4794a9810",
       "classification": "template-publico"
     },
     {
       "path": "STATUS.md",
-      "sha256": "cf0c9d262d4a45a734da49ab582fe78ca2c83a102807f8890ec8aeddd3f81543",
+      "sha256": "1db53ce5a32b5d51ab5b14b655b17813d22fb821bd407f186543741f9bf283d0",
       "classification": "template-publico"
     },
     {
       "path": "changelog.md",
-      "sha256": "e5046be1645ffe3725f18d8c927104a9e60d70bf883766c742ad54fff8d6b49d",
+      "sha256": "6a2d4f7f98502f30b5356ad9335f7238665cd97bd74b09a537019adc2f697435",
       "classification": "template-publico"
     },
     {
@@ -362,7 +367,7 @@
     "kind": "documentation-only",
     "plannedPhase": 2,
     "executionReleased": false,
-    "sourceCommit": "9f4354c0f14a7069f3a2f4c51893723e3015ff82",
-    "note": "Atualização documental autorizada pela Kim; não é recibo de aceite nem fechamento de gate."
+    "sourceCommit": "6a00818c76c4ed3e9922a63e376b10112586434b",
+    "note": "Fase 2 na localização canônica 04_fase-atual. Autorização da Kim para reorganização e publicação; não é recibo de aceite nem fechamento de gate. Fase 1 arquivada em 05_entregas/fase-1."
   }
 }
