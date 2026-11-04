@@ -11,4 +11,5 @@ pendência nenhuma.
 
 - [fase-1/](fase-1/) — Fase 1, Motor de meta Cliente × SKU com dados reais. **Aceita pelo cliente em
   02/11/2026** (T7.5/CA-1-25), arquivada em 04/11/2026 quando a Fase 2 passou a ser a fase aberta.
-  Chega com **28 de 30 tarefas** concluídas
+  Chega com **28 de 30 tasks concluídas** e **T1.3** (convites e privatização) e **T5.1/CA-1-13**
+  (universo — D2/D3) **abertas**, carregadas como pendência na Fase 2.
