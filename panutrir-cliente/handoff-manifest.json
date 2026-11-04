@@ -1,32 +1,368 @@
 {
   "schemaVersion": "adapta-cliente-handoff/v1",
   "phase": 1,
-  "generatedAt": "2026-09-23T14:55:00-03:00",
+  "generatedAt": "2026-11-04T16:20:00Z",
   "versions": {
     "adapta": "0.9.3",
     "adaptaCliente": "0.9.3"
   },
   "files": [
-    { "path": ".claude/settings.json", "sha256": "274a2b15974b8a53c48d2739f5721708f30a1919bc034fac8a264e9b7d6c6414", "classification": "template-publico" },
-    { "path": "01_projeto/constituicao.md", "sha256": "eefc246b374d21a3d7cb8702034f7141c221021ca427d4e80fd45d21cbfd736c", "classification": "template-publico" },
-    { "path": "01_projeto/objetivo.md", "sha256": "7b902199c9f2e44a16c775c9f9650045ab5e73f65e0e85e281d0956c0125b810", "classification": "template-publico" },
-    { "path": "01_projeto/visao-do-projeto.md", "sha256": "8482af655543d75d9aba60aeb09f58202c1f3482362c2e3cf038df383999a87e", "classification": "template-publico" },
-    { "path": "02_reunioes/01-kickoff-e-corte-2026-08-27.md", "sha256": "8acec60c96c7d1f380485b520329f27f020128b99998772bf6a6924f764d2cc8", "classification": "template-publico" },
-    { "path": "03_documentos/PRD.md", "sha256": "80ab8e05c08c122cbcd44c1ca7a735bcc0df394af5bc6442e386445b71d73e76", "classification": "template-publico" },
-    { "path": "03_documentos/escopo.md", "sha256": "ae0c89e9a46e849a82b44931b83cab24fe1f8afb65210ece371a571fd06cc959", "classification": "template-publico" },
-    { "path": "03_documentos/matriz-de-rastreabilidade.md", "sha256": "bc8a13257b9f16d609ed237dc39c687c5afdfc7c279e99711a73ce5cc5e23629", "classification": "template-publico" },
-    { "path": "04_fase-atual/fase.md", "sha256": "6e3e699eb7d8d053c37fe7ed000ef7aee12d5ee265dc75849f5144e9f6511dd1", "classification": "fase-atual" },
-    { "path": "04_fase-atual/matriz-specs-fases.md", "sha256": "1d79eca082bf8266701b7fed6c563b80a1e3f0ca26923c959cb856d751f4aea1", "classification": "template-publico" },
-    { "path": "04_fase-atual/specs/SPEC-1-001.md", "sha256": "e33ec4a798cc2eaa45f985c87d154939d1a217cbaec8b754a11b8c648cd2c8ba", "classification": "spec-fase-atual" },
-    { "path": "04_fase-atual/specs/SPEC-1-002.md", "sha256": "a959b013adf64519369367bee745b2e14f5c0a780e69ac2943ffdfc734aebb14", "classification": "spec-fase-atual" },
-    { "path": "04_fase-atual/specs/SPEC-1-003.md", "sha256": "1e2fefed3140e74ce93cf723cac53fa063169ae99081004126e7e4d6144e2ff9", "classification": "spec-fase-atual" },
-    { "path": "04_fase-atual/specs/SPEC-1-004.md", "sha256": "124e9767dce196f3270f38425a4e53a40bfc4922abd5d703a12ca4fa1c07beff", "classification": "spec-fase-atual" },
-    { "path": "04_fase-atual/specs/SPEC-1-005.md", "sha256": "ebf39bb8b79794dc05c7b3f8d416eaa50c2f570b9aff7e175a627757a4738b8", "classification": "spec-fase-atual" },
-    { "path": "04_fase-atual/specs/SPEC-1-006.md", "sha256": "b241a2b288a98438eab8bb62cd3c3871748119d66ceeb44f6dbf1f8b83ca7235", "classification": "spec-fase-atual" },
-    { "path": "AGENTS.md", "sha256": "370743114a62389e5901cdc708423e1cf44302310e09a090768b185bb96396c3", "classification": "template-publico" },
-    { "path": "CLAUDE.md", "sha256": "b4ca6fb36fbdca24df0944ee91ac4370e71c3f4e086d1a1aec1e484c900889d0", "classification": "template-publico" },
-    { "path": "README.md", "sha256": "82419f00abbbccc64a7ad75fa476934953005ad72d2afef075006e8fc0efbc", "classification": "template-publico" },
-    { "path": "STATUS.md", "sha256": "67bfca020e17308ee2772ac27bb37ebcd054c9f788068290ad0682e50bb5b53f", "classification": "template-publico" },
-    { "path": "changelog.md", "sha256": "2af9416578f00503ae08f56cd322e6190795f4629dbf0c78088db4bd33e180b8", "classification": "template-publico" }
-  ]
+    {
+      "path": ".adapta-cliente/estado-atual.md",
+      "sha256": "4a7fa836adb04b7c2c57a104f6369f325962bbf66c4fd93d8f4f069e009d2469",
+      "classification": "template-publico"
+    },
+    {
+      "path": ".claude/settings.json",
+      "sha256": "914f1e1b8c481c56f6383fe4ae281cf8304b2f3ed4c9260926dcbe045f93b146",
+      "classification": "template-publico"
+    },
+    {
+      "path": "01_projeto/constituicao.md",
+      "sha256": "01f47c7a02dd811c6a5cd74a8166b937229f1e6e0f0b94eb0d91c74827db2788",
+      "classification": "template-publico"
+    },
+    {
+      "path": "01_projeto/objetivo.md",
+      "sha256": "173c52973792d0abf7a096a5d63140659093a5263bd9b0c1081c6ea97fe7deed",
+      "classification": "template-publico"
+    },
+    {
+      "path": "01_projeto/visao-do-projeto.md",
+      "sha256": "16c7d642903ea14f468f7810a66f57a76accf200e4a88c4720660e4a9960a730",
+      "classification": "template-publico"
+    },
+    {
+      "path": "02_reunioes/01-kickoff-e-corte-2026-08-27.md",
+      "sha256": "1213b80c4b4cd2d10c31b06d4cf1de3bbed234712109d3ea7ef3d9a8fb859acf",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/PRD.md",
+      "sha256": "4aa014f752a57039d093c1e5306b1c696507d5565a5f5c2586ab7e8b87724972",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/escopo.md",
+      "sha256": "ce03600eddf1716b7f57cf8bb71e2189ca099d54ba72dd980639497743b8f012",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/matriz-de-rastreabilidade.md",
+      "sha256": "22e5ad7898a5fdb6d321f76cdbe3f25254b78a09efae90f68cdeb799c1a1c3c9",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/perguntas-ao-cliente.md",
+      "sha256": "5d999737c5b4ed14e69150a60679cb2507ab3b0dc1049b8a281604853bf4c2c1",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-2/README.md",
+      "sha256": "59f851732f806da52b9370545fff247a25776278236a4bd0f7bb6b9dc2df48eb",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-2/SPEC-2-001.md",
+      "sha256": "aa33cd17d99b4837e19e797facddfa157236287a5e1d176edb530b7c481f0b9b",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-2/SPEC-2-002.md",
+      "sha256": "b43023c6ced867496d0e55d3d9dc8b952dbb3a7b64d2e5fbc472c5879d25bc48",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-2/SPEC-2-003.md",
+      "sha256": "e202d81b16cda9d59f2b29519808945aed709b938d439ec4da7d914d286ec003",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-2/SPEC-2-004.md",
+      "sha256": "00e861a9cfb6beb3eb739c048959c2b65f291a897c98e9915e104c209a684d4e",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-2/SPEC-2-005.md",
+      "sha256": "010b2b48fc17e1e2f01a1a2044a92fe933dbf5b474d61df298a34904e8de9aba",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-2/SPEC-2-006.md",
+      "sha256": "0c09663e2a9288e8c15c7efe76f2322b667da108d39ef8b3bc3f08496634409b",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-2/matriz-specs-fases.md",
+      "sha256": "16b125d656a1c289842d5ec3580abab9011ef1768011e63deb2342f9c8f50fbe",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-2/plano.md",
+      "sha256": "36550ca81e661063fe602429d70d343d42660f2487c3062b3b0d866bde712d11",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-2/tasks.json",
+      "sha256": "833adb3e76be458d244888e41d415e0404f0c3571463620f2bf7d6c3b08e632f",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-3/SPEC-3-001.md",
+      "sha256": "4b1cb132e4c1d36cc17102b4700638595579caf64ce2e90088a2e68ac1cf79f3",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-3/SPEC-3-002.md",
+      "sha256": "f696bc1174bec717068b5b739ca181ed9f9dffb46b93b556347241120fcd13b6",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-3/SPEC-3-003.md",
+      "sha256": "980fd53c1a7160f4e2943009dc8dd3d04108139740a2714d281100c627834ee8",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-3/SPEC-3-004.md",
+      "sha256": "b659176d86009c9c99453ad2a90d48a16c1bb28082697c593a8a52aa51b8f741",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-4/SPEC-4-001.md",
+      "sha256": "1d0fe223ecf4d308b51ae0ff75709efa8e64eef98011441846e1c7cba068caa8",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-4/SPEC-4-002.md",
+      "sha256": "7d0acee99d24b29313627ea056bdf29e8c65101ee4035d025e6fbb9a3468141e",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-4/SPEC-4-003.md",
+      "sha256": "8d8ddda4de4743f349e7f455e2ac8792f56f54867e869808d633df08332a37d6",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-5/SPEC-5-001.md",
+      "sha256": "e5a0483a83a204aab6645659e155df6a5e753c1d07c8ac35eeab233563b4a8da",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-5/SPEC-5-002.md",
+      "sha256": "547819891a7b911f868dd183e0030a07aff54081a229f154630fd3e4a1afb044",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/specs-programa/fase-5/SPEC-5-003.md",
+      "sha256": "ab207915e33dad6805da1296212c69e33d738e262e5f520d9c812d4892d2b6ed",
+      "classification": "template-publico"
+    },
+    {
+      "path": "04_fase-atual/fase.md",
+      "sha256": "824fb2b2d6b03dd00f31c9137c8be84f3b0dc86a1df7f627382e725a7fa495e6",
+      "classification": "fase-atual"
+    },
+    {
+      "path": "04_fase-atual/matriz-specs-fases.md",
+      "sha256": "cd82a5d51c0d377ca86ba3e57a9493f0b54e0645421f3cc89defc30299eedd27",
+      "classification": "template-publico"
+    },
+    {
+      "path": "04_fase-atual/specs/SPEC-1-001.md",
+      "sha256": "6cdda6ea94603f6d309fbea954004e73648d7e6912b6455f1369891339b7c238",
+      "classification": "spec-fase-atual"
+    },
+    {
+      "path": "04_fase-atual/specs/SPEC-1-002.md",
+      "sha256": "4e8961150501ae3a3ee8397f53fc8096de833718efbc1ef7ad966beabd02cc68",
+      "classification": "spec-fase-atual"
+    },
+    {
+      "path": "04_fase-atual/specs/SPEC-1-003.md",
+      "sha256": "a498925b05cefb45f65c7d32d8d78451349f52196e5fb8228a19911fefc0a3ec",
+      "classification": "spec-fase-atual"
+    },
+    {
+      "path": "04_fase-atual/specs/SPEC-1-004.md",
+      "sha256": "849edc7e57fb1d8c69a87c69504292835840cb874e32b915aa5188c068d39935",
+      "classification": "spec-fase-atual"
+    },
+    {
+      "path": "04_fase-atual/specs/SPEC-1-005.md",
+      "sha256": "d6b152240c37e3c7cdded77790da8fa8f1962fd6717b00cd74a1031e80933be8",
+      "classification": "spec-fase-atual"
+    },
+    {
+      "path": "04_fase-atual/specs/SPEC-1-006.md",
+      "sha256": "b099c071201f6fb1dc14f4e05f949ec4af14a3c1c3f3ce185d731dd405dec215",
+      "classification": "spec-fase-atual"
+    },
+    {
+      "path": "04_fase-atual/specs/SPEC-1-007.md",
+      "sha256": "d6e3cb6bdc6c27a08da9f1601b68cc4f555b1f3f595fd75acc59eb31f450129d",
+      "classification": "spec-fase-atual"
+    },
+    {
+      "path": "05_entregas/README.md",
+      "sha256": "64cdcb788b829ad7f865e17da64e718cef0ae5f986068caff5340047ff5bde7f",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/2026-09-23-emenda-01-metodologia-meta.md",
+      "sha256": "da03c6999ceef75568c2908f63e7351ffd9cfdad116c535438beeb4eab6a8c17",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/2026-09-23-metodologia-oficial-ago-2026.md",
+      "sha256": "1944a4291c57b498582fba430f1b93e5c3939ff875994eeb90538c55c5755b04",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/2026-10-20-emenda-02-reset-do-programa.md",
+      "sha256": "15d8e97eb8c563a41324f2794ee21950657c063cd710a93d7e5c6db860894baf",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/2026-10-20-metodologia-oficial-out-2026.md",
+      "sha256": "b9570750aee35b9cc508cfac49fdea89f78ae8e4807db68095c486b653f795f5",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/2026-10-22-duvidas-t12-para-kim.md",
+      "sha256": "2d8073284b8b490e251507b7d0c9a7a2b699b0fa3d18e439b4eacca366a722bf",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/2026-10-30-csv-citado-nao-existe-e-gabarito-por-regime.md",
+      "sha256": "7322f743c8f337f7388d208aa0dc9fa5b6d113bd973f742ebdc9120bc703e2b6",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/2026-10-30-maturidade-regra-do-cliente.md",
+      "sha256": "830cb2a5471178ad7b9c5a9c3b6cf7e73913c88b6fc05eb486941048cb88bb22",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/2026-10-30-roteiros-de-teste-por-spec.md",
+      "sha256": "19e0b3a1e64a480fd61eb9e8033f079a34ffebbf8f3ad82bce9881981e27b30d",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/2026-10-31-cadastro-raizer-e-lacuna-promotores.md",
+      "sha256": "689a31559d130c41d3c584599a22d8ccf92fb1282f3f9409a62f18552fcd93e5",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/2026-10-31-duvidas-para-kim.md",
+      "sha256": "d80c3e39662440254e4d70e15bfe3e7f2348275caff56c83f666ffabe39865da",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/2026-10-31-migracoes-estrutura-publicadas.md",
+      "sha256": "59d47c4cf500fcee8a09ab39c6ee4e2a05d24f548beb527a6e9f8b260bf8829d",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/2026-11-02-mensagem-para-kim.md",
+      "sha256": "189ad817342b7b7630f78d2afbecf379541e6ff4fd2f633114f51109ecc733b8",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/2026-11-02-revalidacao-specs-fase-2.md",
+      "sha256": "d48a6f17a46ac1791a699b3468e76da5a04960438ff039ce6001fa38c3fd7278",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-09-16-0910-papel-sintetico-explicito.md",
+      "sha256": "132f8d9ff7dccd83d23c2a507e22e5f1505c4f2245b727a048d795708d8a1e44",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-09-16-2010-contratos-antes-do-parser.md",
+      "sha256": "b50266de118b7e60d242ad30d218c29fb1656359dfc718aa083912a67d3e3ebc",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-10-01-1335-runbook-pausa-supabase.md",
+      "sha256": "a62927591bffb10ff4c4a854f97147824a974bca94a842f73cd8814b25af435e",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-10-02-0945-mapeamento-blocos-contratos.md",
+      "sha256": "cfedd74c1fa2932c49cec2b8d452a2c0c689a5e95a5be3cac687b8bf71aae87c",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-10-24-1445-congeladas-tipo-esconde-troca.md",
+      "sha256": "043a7b47eab8160642ad27f4001822a8d22a033eeefad80e618408f8ec9758db",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-10-24-1446-estorno-negativo-legitimo.md",
+      "sha256": "b0db24754434ec08e01a6510799c5b760457086ed3e9114f0d79ddc0f4fe48fa",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-10-24-1706-versao-imutavel-trigger-rascunho.md",
+      "sha256": "b9f4f194374ac4b30987b08ab62e5fe943fb622eeb108c8924b47241684d944b",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-10-24-1707-resposta-cliente-corrige-leitura-provavel.md",
+      "sha256": "5ec93e46618bc32cce4ca70fb3647b99079744a8f623186855edae96ea4849fd",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/controle.md",
+      "sha256": "888e9647a98ef4012d25db92fe7c934b09797b9fb1b20455da8707322b596567",
+      "classification": "template-publico"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "e07bae307d92e2f68cc5c74c3db1f7f1d2453498d005f27d34e1a1848a77da00",
+      "classification": "template-publico"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "8e6752066a23756a8839eb936771e4904f97db7fd6305b02c918f3a21dfd84e8",
+      "classification": "template-publico"
+    },
+    {
+      "path": "README.md",
+      "sha256": "18398323c1f5d307d54e8eda8091d108b3abbc32963b957133f65f07913722e3",
+      "classification": "template-publico"
+    },
+    {
+      "path": "STATUS.md",
+      "sha256": "cf0c9d262d4a45a734da49ab582fe78ca2c83a102807f8890ec8aeddd3f81543",
+      "classification": "template-publico"
+    },
+    {
+      "path": "changelog.md",
+      "sha256": "e5046be1645ffe3725f18d8c927104a9e60d70bf883766c742ad54fff8d6b49d",
+      "classification": "template-publico"
+    },
+    {
+      "path": "contracts/.gitignore",
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+      "classification": "template-publico"
+    },
+    {
+      "path": "fixtures/t21c/vendas_valido_20_colunas_2024.csv",
+      "sha256": "ad4e3aab1ebaad6de8c1db89f4e8dfb87607b05343e077f68330e02ccc053c45",
+      "classification": "template-publico"
+    },
+    {
+      "path": "fixtures/t21c/vendas_valido_troca_em_linha_separada.csv",
+      "sha256": "658476a8067db315fc5cecc3c93532d5eb24ead2bfcb9f17d9b25ee54aeebb3a",
+      "classification": "template-publico"
+    }
+  ],
+  "publication": {
+    "kind": "documentation-only",
+    "plannedPhase": 2,
+    "executionReleased": false,
+    "sourceCommit": "9f4354c0f14a7069f3a2f4c51893723e3015ff82",
+    "note": "Atualização documental autorizada pela Kim; não é recibo de aceite nem fechamento de gate."
+  }
 }
